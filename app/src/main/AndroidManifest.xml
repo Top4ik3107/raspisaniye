@@ -13,22 +13,22 @@
         android:theme="@style/Theme.Raspisaniye"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity5"
+            android:name=".Secondr"
             android:exported="false" />
         <activity
-            android:name=".MainActivity4"
+            android:name=".Mainr"
             android:exported="false" />
         <activity
             android:name=".dz"
             android:exported="false" />
         <activity
-            android:name=".MainActivity3"
+            android:name=".Obuchenie"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Privet"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
