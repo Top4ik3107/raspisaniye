@@ -13,6 +13,33 @@
         android:theme="@style/Theme.Raspisaniye"
         tools:targetApi="31">
         <activity
+            android:name=".adminpanel9"
+            android:exported="false" />
+        <activity
+            android:name=".adminpanel8"
+            android:exported="false" />
+        <activity
+            android:name=".adminpanel7"
+            android:exported="false" />
+        <activity
+            android:name=".adminpanel6"
+            android:exported="false" />
+        <activity
+            android:name=".adminpanel5"
+            android:exported="false" />
+        <activity
+            android:name=".adminpanel4"
+            android:exported="false" />
+        <activity
+            android:name=".adminpanel3"
+            android:exported="false" />
+        <activity
+            android:name=".adminpanel2"
+            android:exported="false" />
+        <activity
+            android:name=".adminpanel"
+            android:exported="false" />
+        <activity
             android:name=".Secondr"
             android:exported="false" />
         <activity
