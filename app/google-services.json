@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "979031268370",
+    "project_id": "raspisanie-c56da",
+    "storage_bucket": "raspisanie-c56da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979031268370:android:05d3acbb985bf10c508ccb",
+        "android_client_info": {
+          "package_name": "com.example.raspisaniye"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8-99jw2dLUZi5cFkAeFExaOPMAUGOKwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
