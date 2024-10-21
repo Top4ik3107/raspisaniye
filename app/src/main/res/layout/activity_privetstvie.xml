@@ -15,34 +15,69 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="30dp">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Добро пожаловать"
+            android:fontFamily="@font/thin"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:layout_marginTop="60dp"
+
+            />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Это приложение для просмотра расписаний"
+            android:fontFamily="@font/reg"
+            android:gravity="center"
+            android:alpha="0.5"
+            android:textColor="@color/white"
+            />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_launcher_background" />
+            android:layout_height="260dp"
+            android:layout_marginTop="100dp"
+            android:scaleType="centerCrop"
 
-        <Button
-            android:id="@+id/button"
+            app:srcCompat="@drawable/_1cbff0f6a834716088579" />
+
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            android:onClick="GoToLogin"
-            />
+            android:layout_height="match_parent"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/roundblu"
+                android:onClick="GoToLogin">
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/light"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="Далее" />
+            </FrameLayout>
 
 
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

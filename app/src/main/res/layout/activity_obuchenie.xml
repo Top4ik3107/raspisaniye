@@ -9,42 +9,100 @@
     android:background="@color/grey">
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="30dp">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Быстрый старт"
+            android:fontFamily="@font/thin"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:layout_marginTop="60dp"
+            />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Обучение позволит вам быстро разобраться в приложении и обеспечит комфортное и эффективное использование."
+            android:fontFamily="@font/reg"
+            android:gravity="center"
+            android:alpha="0.5"
+            android:textColor="@color/white"
+            android:layout_marginBottom="50dp"
+
+            />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="240dp"
             app:srcCompat="@drawable/ic_launcher_background" />
 
-        <Button
-            android:id="@+id/button3"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/roundblubord"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="GoToMain"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Пропустить"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/light"
+                        android:textColor="@color/bluegreen"
+                        android:textSize="20sp"
+                        />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/roundblu"
+                    android:onClick="GoToProd">
+
+                    <TextView
+                        android:id="@+id/textView52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/light"
+                        android:text="Продолжить"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+
+                        />
+                </FrameLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,9 @@
 package com.example.raspisaniye;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +23,13 @@ public class Obuchenie extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    public void GoToMain(View view) {
+        Intent intent = new Intent(this, Mainr.class);
+        startActivity(intent);
+    }
+
+    public void GoToProd(View view) {
+        Toast.makeText(this, "Эта функция сейчас не доступна", Toast.LENGTH_SHORT).show();
     }
 }

@@ -1,6 +1,8 @@
 package com.example.raspisaniye;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,9 @@ public class Login extends AppCompatActivity {
             return insets;
         });
     }
+    public void GoToObuchenie(View view) {
+        Intent intent = new Intent(this, Obuchenie.class);
+        startActivity(intent);
+    }
+
 }
