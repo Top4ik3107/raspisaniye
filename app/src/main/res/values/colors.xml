@@ -2,11 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="grey">#1E1E1E</color>
+    <color name="grey">#181818</color>
     <color name="bluegreen">#55A49D</color>
     <color name="grey_main">#242424</color>
     <color name="grey3">#99DECD</color>
     <color name="grey4">#303030</color>
     <color name="grey5">#202020</color>
     <color name="grey6">#363636</color>
+    <color name="bluegreen_active">#51C5B1</color>
+
 </resources>
