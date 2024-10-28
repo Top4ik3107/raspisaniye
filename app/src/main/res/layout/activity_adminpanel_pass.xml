@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".adminpanel"
     android:background="@color/grey"
-    android:padding="20dp">
+>
 
     <LinearLayout
         android:layout_width="409dp"
@@ -20,13 +20,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20dp">
 
         <LinearLayout
-            android:layout_width="300dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
             android:layout_height="243dp"
             android:orientation="vertical"
-            android:layout_marginLeft="50dp"
+
             android:layout_marginVertical="160dp"
             android:background="@drawable/roundgraybord">
 
@@ -36,23 +38,24 @@
                 android:layout_height="28dp"
                 android:textColor="@color/white"
                 android:textSize="22dp"
-                android:layout_marginLeft="70dp"
+
                 android:layout_marginVertical="30dp"
                 android:text="Админ панель" />
 
             <FrameLayout
                 android:layout_width="265dp"
                 android:layout_height="42dp"
-                android:layout_marginLeft="18dp"
+
                 android:background="@drawable/roundblu"
                 >
 
                 <EditText
                     android:id="@+id/editTextTextPassword2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:ems="10"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:hint="password"/>
 
             </FrameLayout>
 
@@ -60,19 +63,29 @@
                 android:id="@+id/textView24"
                 android:layout_width="57dp"
                 android:layout_height="12dp"
-                android:textSize="9dp"
-                android:layout_marginLeft="18dp"
+                android:textSize="9sp"
+             android:layout_marginRight="105dp"
                 android:layout_marginVertical="10dp"
                 android:text="Нет пароля?" />
 
             <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_width="265dp"
+                android:layout_height="42dp"
 
+                android:background="@drawable/roundwhite">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="83dp"
+                    android:layout_height="16dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Продолжить" />
             </FrameLayout>
+
+            </LinearLayout>
 
 
         </LinearLayout>
 
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
