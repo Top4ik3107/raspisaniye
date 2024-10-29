@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".adminpanel3"
-    android:background="@color/grey">
+    android:background="@color/grey"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,59 +16,112 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:padding="20dp">
 
         <TextView
             android:id="@+id/textView26"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_width="214dp"
+            android:layout_height="38dp"
+            android:layout_marginVertical="86dp"
+            android:text="Выберите курс"
+            android:textColor="@color/white"
+            android:textSize="30dp"/>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_width="314dp"
+            android:layout_height="441dp"
+            android:orientation="vertical"
+            android:background="@drawable/roundgraybord">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="248dp"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_gravity="right"
+                android:background="@color/grey5"
+                android:padding="20dp"
+    >
 
                 <TextView
                     android:id="@+id/textView27"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:layout_height="38dp"
+                    android:background="@drawable/roundgraybordgrayreversegrey"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:text="добавить группу"
+                    android:textColor="@color/white"
+
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/roundgray">
+
+                    <TextView
+                        android:id="@+id/textView85"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="П1А"
+                        android:textColor="@color/white"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundgray">
+
+                    <TextView
+                        android:id="@+id/textView86"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="П1А"
+                        android:textColor="@color/white"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundgray">
+
+                    <TextView
+                        android:id="@+id/textView87"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="П1А"
+                        android:textColor="@color/white"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundgray">
+
+                    <TextView
+                        android:id="@+id/textView88"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="П1А"
+                        android:textColor="@color/white"/>
+                </FrameLayout>
             </LinearLayout>
-
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@color/grey">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -75,7 +129,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView27"
+                        android:id="@+id/textView28"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
@@ -87,7 +141,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView27"
+                        android:id="@+id/textView29"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
@@ -99,7 +153,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView27"
+                        android:id="@+id/textView30"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
@@ -111,7 +165,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView27"
+                        android:id="@+id/textView31"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
