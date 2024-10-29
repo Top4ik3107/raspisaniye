@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".adminpanel"
     android:background="@color/grey"
->
+    >
 
     <LinearLayout
         android:layout_width="409dp"
@@ -41,7 +41,6 @@
 
                 android:layout_marginVertical="30dp"
                 android:text="Админ панель" />
-
             <FrameLayout
                 android:layout_width="265dp"
                 android:layout_height="42dp"
@@ -64,7 +63,7 @@
                 android:layout_width="57dp"
                 android:layout_height="12dp"
                 android:textSize="9sp"
-             android:layout_marginRight="105dp"
+                android:layout_marginRight="105dp"
                 android:layout_marginVertical="10dp"
                 android:text="Нет пароля?" />
 
@@ -83,9 +82,9 @@
                     android:text="Продолжить" />
             </FrameLayout>
 
-            </LinearLayout>
-
-
         </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,16 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".Secondr"
     android:background="@color/grey"
-    android:padding="20dp">
+    >
 
     <LinearLayout
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal">
 
         <TextView
             android:id="@+id/textView13"
@@ -28,17 +30,19 @@
             android:textColor="@color/white"
             android:textSize="32sp"
             android:layout_marginTop="10dp"
+
             android:layout_marginBottom="20dp"
             />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="180dp"
+
 
             android:orientation="horizontal">
 
             <FrameLayout
-                android:layout_width="183dp"
+                android:layout_width="170dp"
                 android:layout_marginRight="5dp"
                 android:layout_height="match_parent">
 
@@ -54,7 +58,41 @@
                         android:layout_width="match_parent"
                         android:layout_height="41dp"
                         android:background="@color/grey5"
+                        android:orientation="vertical"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:background="@color/grey5"
                         android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:background="@color/grey6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView54"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin"/>
 
                     </LinearLayout>
 
@@ -62,31 +100,52 @@
                         android:layout_width="match_parent"
                         android:layout_height="27dp"
                         android:background="@color/grey5"
-                        android:orientation="vertical"></LinearLayout>
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="27dp"
                         android:background="@color/grey6"
-                        android:orientation="vertical"></LinearLayout>
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView56"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="27dp"
                         android:background="@color/grey5"
-                        android:orientation="vertical"></LinearLayout>
+                        android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="27dp"
-                        android:background="@color/grey6"
-                        android:orientation="vertical"></LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="27dp"
-                        android:background="@color/grey5"
-                        android:orientation="vertical"></LinearLayout>
+                        <TextView
+                            android:id="@+id/textView57"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin"/>
+                    </LinearLayout>
                 </LinearLayout>
 
                 <FrameLayout
@@ -110,7 +169,7 @@
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="183dp"
+                android:layout_width="170dp"
                 android:layout_height="match_parent">
 
                 <LinearLayout
@@ -125,39 +184,92 @@
                         android:layout_width="match_parent"
                         android:layout_height="41dp"
                         android:background="@color/grey5"
+                        android:orientation="vertical"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:background="@color/grey5"
                         android:orientation="vertical">
 
+                        <TextView
+                            android:id="@+id/textView60"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:background="@color/grey6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView61"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="27dp"
                         android:background="@color/grey5"
-                        android:orientation="vertical"></LinearLayout>
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView62"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="27dp"
                         android:background="@color/grey6"
-                        android:orientation="vertical"></LinearLayout>
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView63"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin"/>
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="27dp"
                         android:background="@color/grey5"
-                        android:orientation="vertical"></LinearLayout>
+                        android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="27dp"
-                        android:background="@color/grey6"
-                        android:orientation="vertical"></LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="27dp"
-                        android:background="@color/grey5"
-                        android:orientation="vertical"></LinearLayout>
+                        <TextView
+                            android:id="@+id/textView64"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin"/>
+                    </LinearLayout>
                 </LinearLayout>
 
                 <FrameLayout
@@ -182,205 +294,570 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginTop="30dp"
+
             android:orientation="horizontal">
 
             <FrameLayout
-                android:layout_width="match_parent"
+                android:layout_width="170dp"
+                android:layout_marginRight="5dp"
                 android:layout_height="match_parent">
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="6dp"
+                    android:padding="2dp"
+                    android:background="@drawable/bordbl">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="41dp"
+                        android:background="@color/grey5"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView65"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView66"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView67"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin"/>
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView68"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin"/>
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView69"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
                 </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_height="30dp"
+                    android:background="@color/grey4"
+                    android:layout_marginTop="13dp">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:fontFamily="@font/thin"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        />
+                </FrameLayout>
+
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="match_parent"
+                android:layout_width="170dp"
                 android:layout_height="match_parent">
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="6dp"
+                    android:padding="2dp"
+                    android:background="@drawable/bordbl">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="41dp"
+                        android:background="@color/grey5"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView70"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView71"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView72"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView73"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView74"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
                 </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/grey4"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginHorizontal="2dp">
+
+                    <TextView
+                        android:id="@+id/textView112"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:fontFamily="@font/thin"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        />
+                </FrameLayout>
             </FrameLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginTop="30dp"
+
             android:orientation="horizontal">
 
             <FrameLayout
-                android:layout_width="match_parent"
+                android:layout_width="170dp"
+                android:layout_marginRight="5dp"
                 android:layout_height="match_parent">
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="6dp"
+                    android:padding="2dp"
+                    android:background="@drawable/bordbl">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="41dp"
+                        android:background="@color/grey5"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView75"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView76"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin"/>
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView77"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin"/>
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView78"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView79"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin"/>
+                    </LinearLayout>
                 </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_height="30dp"
+                    android:background="@color/grey4"
+                    android:layout_marginTop="13dp">
+
+                    <TextView
+                        android:id="@+id/textView103"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:fontFamily="@font/thin"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        />
+                </FrameLayout>
+
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="match_parent"
+                android:layout_width="170dp"
                 android:layout_height="match_parent">
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="6dp"
+                    android:padding="2dp"
+                    android:background="@drawable/bordbl">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="41dp"
+                        android:background="@color/grey5"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView80"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView81"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView82"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView83"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:layout_height="27dp"
+                        android:background="@color/grey5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView84"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/thin" />
+                    </LinearLayout>
                 </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/grey4"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginHorizontal="2dp">
+
+                    <TextView
+                        android:id="@+id/textView113"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:fontFamily="@font/thin"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        />
+                </FrameLayout>
             </FrameLayout>
 
         </LinearLayout>
     </LinearLayout>
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp" android:layout_gravity="center_vertical"
+        >
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_gravity="left"
+            android:layout_height="match_parent"
+            android:onClick="GoToMain">
+
+            <FrameLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="6dp"
+                android:alpha="0.5"
+                android:background="@color/white">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginVertical="150dp"
+                android:layout_marginLeft="12dp"
+                android:alpha="0.5"
+                android:background="@color/white">
+
+            </FrameLayout>
+        </FrameLayout>
+
+    </FrameLayout>
+</FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
