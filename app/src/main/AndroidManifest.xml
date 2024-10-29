@@ -43,10 +43,10 @@
             android:name=".adminpanel3"
             android:exported="false" />
         <activity
-            android:name=".adminpanel2"
+            android:name=".adminpanelRazdelenie"
             android:exported="false" />
         <activity
-            android:name=".adminpanel"
+            android:name=".adminpanelPassword"
             android:exported="false" />
         <activity
             android:name=".Secondr"
