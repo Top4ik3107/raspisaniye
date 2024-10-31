@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminpanel8"
+    android:background="@color/grey"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:layout_width="355dp"
+            android:layout_height="330dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="182dp"
+            android:orientation="vertical"
+            android:background="@color/grey5">
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="184dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="-30dp"
+                android:gravity="center"
+                android:text="Выберите предмет"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="72dp"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:background="@color/grey">
+
+                <EditText
+                    android:id="@+id/editTextText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="text"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="116dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/grey">
+
+                <TextView
+                    android:id="@+id/textView90"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Завершить"
+                    android:textColor="@color/white"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
