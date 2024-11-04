@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminpanel6"
+    android:background="@color/grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:orientation="vertical"
+            android:layout_gravity="right"
+            android:background="@drawable/roundwhite2"
+            android:alpha="0.5"
+            >
+
+            <TextView
+                android:id="@+id/textView91"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Создать колледж"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="570dp"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/roundgraybord"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="250dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="Создание колледжа"
+                android:textColor="@color/white"
+                android:textSize="26dp"/>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="56dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundblu">
+
+                <EditText
+                    android:id="@+id/editTextText"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="-20dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name"
+                    android:hint="Название"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="56dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundblu">
+
+                <EditText
+                    android:id="@+id/editTextText2"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="-20dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name"
+                    android:hint="Название"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundblu"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextText3"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="-20dp"
+                    android:ems="10"
+                    android:hint="Название"
+                    android:inputType="textEmailAddress"
+                    android:text="Почта" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundblu"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextText4"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="-20dp"
+                    android:ems="10"
+                    android:hint="Название"
+                    android:inputType="textPassword"
+                    android:text="Пароль" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundblu"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextText5"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="-20dp"
+                    android:ems="10"
+                    android:hint="Название"
+                    android:inputType="textPassword"
+                    android:text="Пароль" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="56dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/roundwhite"
+                >
+
+                <TextView
+                    android:id="@+id/textView93"
+                    android:layout_width="120dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Продолжить"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
