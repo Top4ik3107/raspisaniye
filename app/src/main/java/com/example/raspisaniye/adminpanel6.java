@@ -25,6 +25,6 @@ public class adminpanel6 extends AppCompatActivity {
     }
 
     public void GoToSing(View view) {
-        Intent intent = new Intent(this, adminpanel.class);
+        Intent intent = new Intent(this, adminpanel3.class);
     }
 }
