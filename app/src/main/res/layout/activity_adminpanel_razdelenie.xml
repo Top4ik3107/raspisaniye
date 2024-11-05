@@ -22,12 +22,12 @@
             android:id="@+id/textView25"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/thin"
-            android:textColor="@color/white"
-            android:textSize="32sp"
             android:gravity="center"
-            android:layout_marginTop="20dp"/>
+            android:text="Колледж не выбран"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,41 +40,44 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/roundblu">
+                android:background="@drawable/roundblu"
+                android:onClick="GoToAdd">
 
                 <TextView
                     android:id="@+id/textView11"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="TextView"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:text="Добавить дз" />
             </FrameLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/roundblu"
-                android:layout_marginBottom="10dp">
+                android:layout_marginBottom="10dp"
+                android:onClick="GoToSchedule">
 
                 <TextView
                     android:id="@+id/textView58"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="TextView"
-                    android:gravity="center"/>
+                    android:gravity="center"
+                    android:text="Расписание" />
             </FrameLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@drawable/roundblu">
+                android:background="@drawable/roundblu"
+                android:onClick="GoToSelectCollege">
 
                 <TextView
                     android:id="@+id/textView59"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="TextView"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:text="Выбрать колледж" />
             </FrameLayout>
         </LinearLayout>
 

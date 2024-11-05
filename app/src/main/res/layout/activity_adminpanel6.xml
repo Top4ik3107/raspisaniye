@@ -74,9 +74,8 @@
                     android:layout_height="48dp"
                     android:layout_marginLeft="-20dp"
                     android:ems="10"
-                    android:inputType="text"
-                    android:text="Name"
-                    android:hint="Название"/>
+                    android:hint="Название колледжа"
+                    android:inputType="text" />
             </LinearLayout>
 
             <LinearLayout
@@ -94,9 +93,8 @@
                     android:layout_height="48dp"
                     android:layout_marginLeft="-20dp"
                     android:ems="10"
-                    android:inputType="text"
-                    android:text="Name"
-                    android:hint="Название"/>
+                    android:hint="пороль"
+                    android:inputType="text" />
 
             </LinearLayout>
 
@@ -125,7 +123,9 @@
                     android:layout_marginTop="13dp"
                     android:layout_marginLeft="10dp"
                     android:text="Продолжить"
-                    android:textSize="20dp"/>
+                    android:textSize="20dp"
+                    android:onClick="GoToSing"
+                    />
             </LinearLayout>
 
         </LinearLayout>

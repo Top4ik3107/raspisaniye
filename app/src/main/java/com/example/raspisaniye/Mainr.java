@@ -1,6 +1,7 @@
 package com.example.raspisaniye;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,6 +26,7 @@ public class Mainr extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
     }
 
     public void GoTosecond(View view) {
@@ -36,9 +38,9 @@ public class Mainr extends AppCompatActivity {
         FrameLayout frameLayout = findViewById(R.id.pan);
         LayoutInflater inflater = LayoutInflater.from(this);
 
-        if (frameLayout != null) { // Проверяем, что frameLayout существует
+        if (frameLayout != null) {
             if (frameLayout.getChildCount() > 0) {
-                frameLayout.removeAllViews(); // Очищаем, если есть элементы
+                frameLayout.removeAllViews();
             } else {
                 View contentView = inflater.inflate(R.layout.panel, frameLayout, false);
                 frameLayout.addView(contentView);
@@ -48,4 +50,12 @@ public class Mainr extends AppCompatActivity {
 
         }
     }
+    public void GoToAdmPass(View view) {
+        Intent intent = new Intent(this, adminpanelPassword.class);
+        startActivity(intent);
+    }
+
+
+
+
 }

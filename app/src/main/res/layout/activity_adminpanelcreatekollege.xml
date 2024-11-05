@@ -74,9 +74,8 @@
                     android:layout_height="48dp"
                     android:layout_marginLeft="-20dp"
                     android:ems="10"
-                    android:inputType="text"
-                    android:text="Name"
-                    android:hint="Название"/>
+                    android:hint="Название"
+                    android:inputType="text" />
             </LinearLayout>
 
             <LinearLayout
@@ -94,9 +93,8 @@
                     android:layout_height="48dp"
                     android:layout_marginLeft="-20dp"
                     android:ems="10"
-                    android:inputType="text"
-                    android:text="Name"
-                    android:hint="Название"/>
+                    android:hint="Город"
+                    android:inputType="text" />
 
             </LinearLayout>
 
@@ -115,9 +113,8 @@
                     android:layout_height="48dp"
                     android:layout_marginLeft="-20dp"
                     android:ems="10"
-                    android:hint="Название"
-                    android:inputType="textEmailAddress"
-                    android:text="Почта" />
+                    android:hint="Почта"
+                    android:inputType="textEmailAddress" />
             </LinearLayout>
 
             <LinearLayout
@@ -135,9 +132,8 @@
                     android:layout_height="48dp"
                     android:layout_marginLeft="-20dp"
                     android:ems="10"
-                    android:hint="Название"
-                    android:inputType="textPassword"
-                    android:text="Пароль" />
+                    android:hint="Пароль"
+                    android:inputType="textPassword" />
             </LinearLayout>
 
             <LinearLayout
@@ -155,9 +151,8 @@
                     android:layout_height="48dp"
                     android:layout_marginLeft="-20dp"
                     android:ems="10"
-                    android:hint="Название"
-                    android:inputType="textPassword"
-                    android:text="Пароль" />
+                    android:hint="Повторите ароль"
+                    android:inputType="textPassword" />
             </LinearLayout>
 
             <LinearLayout

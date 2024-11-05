@@ -1,6 +1,7 @@
 package com.example.raspisaniye;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 
@@ -22,6 +23,8 @@ public class Privet extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        SharedPreferences sharedPreferencesadm = getSharedPreferences("adminData", MODE_PRIVATE);
+        SharedPreferences sharedPreferencespers = getSharedPreferences("personData", MODE_PRIVATE);
 
     }
 

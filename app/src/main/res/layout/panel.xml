@@ -36,7 +36,7 @@
                     android:textColor="@color/white"
                     android:layout_marginBottom="10dp"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="Дз" />
             </FrameLayout>
 
             <FrameLayout
@@ -48,7 +48,7 @@
                     android:id="@+id/textView38"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
+                    android:text="Рассылки"
                     android:background="@color/grey4"
                     android:textColor="@color/white"
                     android:gravity="center"
@@ -73,7 +73,7 @@
                     android:id="@+id/textView94"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
+                    android:text="Задания"
                     android:gravity="center"
                     android:background="@color/grey4"
                     android:textColor="@color/white"
@@ -92,7 +92,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/grey4"
                     android:textColor="@color/white"
-                    android:text="TextView"
+                    android:text="Настройки"
                     android:gravity="center"
                     android:layout_gravity="bottom"
                     android:layout_marginBottom="10dp"/>
@@ -115,7 +115,8 @@
                     android:id="@+id/textView95"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
+                    android:text="Меропри-
+                    ятия"
                     android:background="@color/grey4"
                     android:textColor="@color/white"
                     android:gravity="center"
@@ -127,7 +128,8 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:background="@color/grey">
+                android:background="@color/grey"
+                android:onClick="GoToAdmPass">
 
                 <TextView
                     android:id="@+id/textView40"
@@ -135,7 +137,7 @@
                     android:background="@color/grey4"
                     android:textColor="@color/white"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
+                    android:text="Админ"
                     android:gravity="center"
                     android:layout_gravity="bottom"
                     android:layout_marginBottom="10dp"/>
