@@ -8,1135 +8,2274 @@
     tools:context=".adminpanel4"
     android:background="@color/grey">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ScrollView
+        <LinearLayout
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/grey_main"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Введите Данные"
+                android:fontFamily="@font/thin"
+                android:textSize="30sp"
+                android:textColor="@color/sm"
+                />
+
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:paddingVertical="1dp"
+                android:background="@color/sm"
+                android:layout_marginVertical="6dp"
+                android:layout_marginHorizontal="30dp"
 
-                <TextView
-                    android:id="@+id/textView27"
+                />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                </FrameLayout>
-
-                <Button
-                    android:id="@+id/button14"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
-
-                <Button
-                    android:id="@+id/button15"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                </FrameLayout>
-
-                <TextView
-                    android:id="@+id/textView41"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/textView40"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/textView39"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/textView38"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/textView36"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextText5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Name" />
-                </LinearLayout>
-            </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+                    <FrameLayout
+                        android:id="@+id/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="30dp"
+                        android:onClick="addtobbase"
+                        android:background="@drawable/roundblubord"
+                        >
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Завершить настройку"
+                            android:layout_gravity="center"
+                            android:textColor="@color/bluegreen"/>
+                    </FrameLayout>
+
+                   
+                    <Spinner
+                        android:id="@+id/spinnersity"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/sm"
+                        android:tooltipText="Автонастройка времени"
+
+
+
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Понедельник"
+                            android:textColor="@color/sm"
+                            android:textSize="20sp"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v11"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Первый урок"
+                                android:maxLength="12"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v11t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v11t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v12"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Второй урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+                            <EditText
+                                android:id="@+id/v12t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+                            <EditText
+                                android:id="@+id/v12t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v13"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Третий урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v13t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v13t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v14"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Четвертый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v14t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v14t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v15"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Пятый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v15t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+
+
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v15t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v16"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Шестой урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v16t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v16t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v17"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Седьмой урок"
+                                android:maxLength="12"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v17t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v17t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Вторник"
+                            android:textColor="@color/sm"
+                            android:textSize="20sp"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v21"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Первый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v21t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v21t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v22"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Второй урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v22t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v22t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v23"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Третий урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v23t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v23t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v24"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Четвертый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v24t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v24t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v25"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Пятый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v25t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v25t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v26"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Шестой урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v26t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v26t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v27"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Седьмой урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v27t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v27t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Среда"
+                            android:textColor="@color/sm"
+                            android:textSize="20sp"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v31"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Первый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v31t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v31t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v32"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Второй урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v32t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v32t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v33"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Третий урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v33t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v33t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v34"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Четвертый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v34t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v34t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v35"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Пятый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v35t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v35t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v36"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Шестой урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v36t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v36t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v37"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Седьмой урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v37t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v37t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Четверг"
+                            android:textColor="@color/sm"
+                            android:textSize="20sp"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v41"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Первый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v41t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v41t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v42"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Второй урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v42t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v42t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v43"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Третий урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v43t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v43t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v44"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Четвертый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v44t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v44t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v45"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Пятый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v45t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v45t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v46"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Шестой урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v46t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v46t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v47"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Седьмой урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v47t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v47t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Пятница"
+                            android:textColor="@color/sm"
+                            android:textSize="20sp"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v51"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Первый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v51t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v51t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v52"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Второй урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v52t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v52t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v53"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Третий урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v53t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v53t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v54"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Четвертый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v54t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v54t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v55"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Пятый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v55t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v55t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v56"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Шестой урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v56t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v56t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v57"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Седьмой урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v57t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v57t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Суббота"
+                            android:textColor="@color/sm"
+                            android:textSize="20sp"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v61"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Первый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v61t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v61t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v62"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Второй урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v62t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v62t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v63"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Третий урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v63t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v63t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v64"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Четвертый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v64t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v64t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity=""
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v65"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Пятый урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v65t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v65t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v66"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Шестой урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/v66t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v66t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/v67"
+                                android:layout_width="130dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:textSize="16sp"
+                                android:ems="10"
+                                android:maxLength="12"
+                                android:hint="Седьмой урок"
+                                android:inputType="text"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v67t"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Начало"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                            <EditText
+                                android:id="@+id/v67t2"
+                                android:layout_width="80dp"
+                                android:layout_height="48dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/roundedbuttoncc"
+                                android:ems="10"
+                                android:hint="Конец"
+                                android:inputType="time"
+                                android:paddingLeft="5dp"
+                                android:textColorHint="@color/grey" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

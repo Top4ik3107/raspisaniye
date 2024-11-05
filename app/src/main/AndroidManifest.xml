@@ -13,13 +13,16 @@
         android:theme="@style/Theme.Raspisaniye"
         tools:targetApi="31">
         <activity
+            android:name=".butt"
+            android:exported="false" />
+        <activity
             android:name=".dz3"
             android:exported="false" />
         <activity
             android:name=".dz2"
             android:exported="false" />
         <activity
-            android:name=".adminpanel10"
+            android:name=".buttonMenu"
             android:exported="false" />
         <activity
             android:name=".adminpanel9"

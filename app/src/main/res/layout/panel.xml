@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/grey7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/grey"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:background="@color/grey4"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/grey">
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:background="@color/grey4"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/grey">
+
+                <TextView
+                    android:id="@+id/textView94"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:gravity="center"
+                    android:background="@color/grey4"
+                    android:textColor="@color/white"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/grey">
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey4"
+                    android:textColor="@color/white"
+                    android:text="TextView"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/grey">
+
+                <TextView
+                    android:id="@+id/textView95"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:background="@color/grey4"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/grey">
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:background="@color/grey4"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

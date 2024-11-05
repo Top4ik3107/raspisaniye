@@ -983,4 +983,31 @@
         </FrameLayout>
     </FrameLayout>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                >
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/activity_butt" />
+
+
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
