@@ -1,8 +1,9 @@
 {
   "project_info": {
     "project_number": "979031268370",
+    "firebase_url": "https://raspisanie-c56da-default-rtdb.firebaseio.com",
     "project_id": "raspisanie-c56da",
-    "storage_bucket": "raspisanie-c56da.appspot.com"
+    "storage_bucket": "raspisanie-c56da.firebasestorage.app"
   },
   "client": [
     {

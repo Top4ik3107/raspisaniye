@@ -5,296 +5,305 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondRs2Activity">
+    tools:context=".SecondRs2Activity"
+    android:background="@color/sm"
 
-    <LinearLayout
+    >
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/grey"
-        android:padding="20dp">
+        android:onClick="aaa"
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/ic_input_delete" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView96"
-            android:layout_marginTop="30dp"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="Понедельник"
-            android:textColor="@color/bluegreen"
-            android:textSize="28dp"/>
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/regular"
+            android:text="Сегодня"
+            android:textColor="@color/white"
+            android:textSize="42dp" />
+
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="350dp"
-            android:orientation="vertical"
-            android:layout_marginTop="80dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:background="@drawable/roundgraybord">
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="220dp"
+            android:background="@color/white"
+            android:elevation="10dp"
+            android:onClick="aaa"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="365dp"
-                android:layout_height="50dp"
-                android:orientation="vertical"
-                >
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView97"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
+
+
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular"
                     android:gravity="center"
-                    android:layout_marginTop="15dp"
-                    android:text="1 Пара"
-                    android:textColor="@color/white"/>
+                    android:paddingStart="30dp"
+                    android:text="Урок1"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
 
                 <TextView
-                    android:id="@+id/textView98"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:id="@+id/sspred1"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular"
                     android:gravity="center"
-                    android:layout_marginTop="-20dp"
-                    android:text="Предмет"
-                    android:textColor="@color/white"/>
+                    android:paddingHorizontal="20dp"
+                    android:text="Загрузк"
+                    android:textColor="@color/black"
+
+
+                    android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView99"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/sstime1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="right"
+
+                    android:fontFamily="@font/regular"
                     android:gravity="center"
-                    android:layout_marginTop="-20dp"
-                    android:text="8:00-9:20"
-                    android:textColor="@color/white"/>
+                    android:paddingEnd="20dp"
+                    android:text="Загрузка"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="365dp"
-                android:layout_height="50dp"
-                android:orientation="vertical"
-                android:background="@color/grey">
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:background="@color/sf4"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView100"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
+
+
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular"
                     android:gravity="center"
-                    android:layout_marginTop="15dp"
-                    android:text="1 Пара"
-                    android:textColor="@color/white"/>
+                    android:paddingStart="30dp"
+                    android:text="Урок2"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
 
                 <TextView
-                    android:id="@+id/textView101"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:id="@+id/sspred2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular"
                     android:gravity="center"
-                    android:layout_marginTop="-20dp"
-                    android:text="Предмет"
-                    android:textColor="@color/white"/>
+                    android:paddingHorizontal="20dp"
+                    android:text="Загрузка"
+                    android:textColor="@color/black"
+
+
+                    android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView102"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/sstime2"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="right"
+
+                    android:fontFamily="@font/regular"
                     android:gravity="center"
-                    android:layout_marginTop="-20dp"
-                    android:text="8:00-9:20"
-                    android:textColor="@color/white"/>
+                    android:paddingEnd="20dp"
+                    android:text="Загрузка"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="365dp"
-                android:layout_height="50dp"
-                android:orientation="vertical">
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView103"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
+
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular"
                     android:gravity="center"
-                    android:layout_marginTop="15dp"
-                    android:text="1 Пара"
-                    android:textColor="@color/white"/>
+                    android:paddingStart="30dp"
+                    android:text="Урок3"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
 
                 <TextView
-                    android:id="@+id/textView104"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:id="@+id/sspred3"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular"
                     android:gravity="center"
-                    android:layout_marginTop="-20dp"
-                    android:text="Предмет"
-                    android:textColor="@color/white"/>
+                    android:paddingHorizontal="20dp"
+                    android:text="Загрузка"
+                    android:textColor="@color/black"
+
+
+                    android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView105"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/sstime3"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="right"
+
+                    android:fontFamily="@font/regular"
                     android:gravity="center"
-                    android:layout_marginTop="-20dp"
-                    android:text="8:00-9:20"
-                    android:textColor="@color/white"/>
+                    android:paddingEnd="20dp"
+                    android:text="Загрузка"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="365dp"
-                android:layout_height="50dp"
-                android:orientation="vertical"
-                android:background="@color/grey">
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:background="@color/sf4"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView106"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
+
+
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular"
                     android:gravity="center"
-                    android:layout_marginTop="15dp"
-                    android:text="1 Пара"
-                    android:textColor="@color/white"/>
+                    android:paddingStart="30dp"
+                    android:text="Урок4"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
 
                 <TextView
-                    android:id="@+id/textView107"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:id="@+id/sspred4"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular"
                     android:gravity="center"
-                    android:layout_marginTop="-20dp"
-                    android:text="Предмет"
-                    android:textColor="@color/white"/>
+                    android:paddingHorizontal="20dp"
+                    android:text="Загрузка"
+                    android:textColor="@color/black"
+
+
+                    android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView108"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/sstime4"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="right"
+
+                    android:fontFamily="@font/regular"
                     android:gravity="center"
-                    android:layout_marginTop="-20dp"
-                    android:text="8:00-9:20"
-                    android:textColor="@color/white"/>
+                    android:paddingEnd="20dp"
+                    android:text="Загрузка"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
             </LinearLayout>
+
 
             <LinearLayout
-                android:layout_width="365dp"
-                android:layout_height="50dp"
-                android:orientation="vertical">
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView109"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
+
+
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular"
                     android:gravity="center"
-                    android:layout_marginTop="15dp"
-                    android:text="1 Пара"
-                    android:textColor="@color/white"/>
+                    android:paddingStart="30dp"
+                    android:text="Урок5"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
 
                 <TextView
-                    android:id="@+id/textView110"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:id="@+id/sspred5"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular"
                     android:gravity="center"
-                    android:layout_marginTop="-20dp"
-                    android:text="Предмет"
-                    android:textColor="@color/white"/>
+                    android:paddingHorizontal="20dp"
+                    android:text="Загрузка"
+                    android:textColor="@color/black"
+
+
+                    android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView111"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/sstime5"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="right"
+
+                    android:fontFamily="@font/regular"
                     android:gravity="center"
-                    android:layout_marginTop="-20dp"
-                    android:text="8:00-9:20"
-                    android:textColor="@color/white"/>
+                    android:paddingEnd="20dp"
+                    android:text="Загрузк"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="365dp"
-                android:layout_height="50dp"
-                android:orientation="vertical"
-                android:background="@color/grey">
 
-                <TextView
-                    android:id="@+id/textView112"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:gravity="center"
-                    android:layout_marginTop="15dp"
-                    android:text="1 Пара"
-                    android:textColor="@color/white"/>
 
-                <TextView
-                    android:id="@+id/textView113"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:layout_marginTop="-20dp"
-                    android:text="Предмет"
-                    android:textColor="@color/white"/>
 
-                <TextView
-                    android:id="@+id/textView114"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:gravity="center"
-                    android:layout_marginTop="-20dp"
-                    android:text="8:00-9:20"
-                    android:textColor="@color/white"/>
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="365dp"
-                android:layout_height="50dp"
-                android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView115"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:gravity="center"
-                    android:layout_marginTop="15dp"
-                    android:text="1 Пара"
-                    android:textColor="@color/white"/>
-
-                <TextView
-                    android:id="@+id/textView116"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:layout_marginTop="-20dp"
-                    android:text="Предмет"
-                    android:textColor="@color/white"/>
-
-                <TextView
-                    android:id="@+id/textView117"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:gravity="center"
-                    android:layout_marginTop="-20dp"
-                    android:text="8:00-9:20"
-                    android:textColor="@color/white"/>
-            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </FrameLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

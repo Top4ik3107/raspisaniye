@@ -81,7 +81,7 @@ public class adminpanelRazdelenie extends AppCompatActivity {
     }
 
     public void GoToSelectCollege(View view) {
-        Intent intent = new Intent(this, adminpanel6.class);
+        Intent intent = new Intent(this, adminpanelCollege.class);
         startActivity(intent);
 
 

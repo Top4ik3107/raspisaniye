@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".adminpanel6"
+    tools:context=".adminpanelCollege"
     android:background="@color/grey">
 
     <LinearLayout
@@ -24,6 +24,7 @@
             android:orientation="vertical"
             android:layout_gravity="right"
             android:background="@drawable/roundwhite2"
+            android:onClick="GoToCreate"
             android:alpha="0.5"
             >
 
