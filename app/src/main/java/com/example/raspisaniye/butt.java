@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.protobuf.Empty;
+
 public class butt extends AppCompatActivity {
 
     @Override
@@ -28,4 +30,9 @@ public class butt extends AppCompatActivity {
     }
 
 
+    public void OpenMenu(View view) {
+        FrameLayout pan = findViewById(R.id.pan);
+        pan.setVisibility(View.VISIBLE);
+
+    }
 }
