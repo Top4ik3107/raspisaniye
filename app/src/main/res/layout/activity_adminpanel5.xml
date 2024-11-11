@@ -15,63 +15,57 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </FrameLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="350dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical"
+            android:background="@color/grey5">
 
             <TextView
                 android:id="@+id/textView29"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:layout_width="174dp"
+                android:layout_height="60dp"
+                android:text="Выберите предмет"
+                android:textSize="19dp"/>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:background="@color/grey">
 
                 <EditText
-                    android:id="@+id/editTextText3"
+                    android:id="@+id/editTextText6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="text"
-                    android:text="Name" />
+                    android:text="Text"
+                    android:textColor="@color/white"/>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/grey">
 
-                <EditText
-                    android:id="@+id/editTextTextPassword5"
+                <TextView
+                    android:id="@+id/textView31"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPassword" />
+                    android:gravity="center"
+                    android:text="Завершить" />
             </LinearLayout>
-
-            <TextView
-                android:id="@+id/textView31"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </FrameLayout>
         </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
