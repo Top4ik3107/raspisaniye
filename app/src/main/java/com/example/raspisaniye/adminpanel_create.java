@@ -53,12 +53,14 @@ public class adminpanel_create extends AppCompatActivity {
         if (name.isEmpty() || city.isEmpty() || email.isEmpty() || password.isEmpty() || password2.isEmpty()) {
             Toast.makeText(this, "Заполните все поля", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Загрузкаff", Toast.LENGTH_SHORT).show();
+
             if (!password.equals(password2)) {
                 Toast.makeText(this, "Пароли не совпадают", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "Загрузкаgg", Toast.LENGTH_SHORT).show();
+
+
                 DocumentReference Fc = firestore.collection("College").document(name);
+                DocumentReference ps = firestore.collection("College").document(name).collection("data").document("personal");
                 Map<String, Object> curs = new HashMap<>();
 
                 curs.put("Group","test");
@@ -68,6 +70,15 @@ public class adminpanel_create extends AppCompatActivity {
                 Fc.collection("Year").document("Year3").set(curs);
                 Fc.collection("Year").document("Year4").set(curs);
                 Toast.makeText(this, "Готово", Toast.LENGTH_SHORT).show();
+
+                Map<String, Object> personal = new HashMap<>();
+                personal.put("name", name);
+                personal.put("city", city);
+                personal.put("email", email);
+                personal.put("password", password);
+                ps.set(personal);
+
+
 
 
 

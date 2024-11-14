@@ -33,29 +33,19 @@ public class adminpanelRazdelenie extends AppCompatActivity {
         });
         subot7= findViewById(R.id.textView25);
 
-        pref = getSharedPreferences("adminDate",MODE_PRIVATE);
+        pref = getSharedPreferences("data",MODE_PRIVATE);
 
         try {
-            Bundle arguments = getIntent().getExtras();
 
-            String college = arguments.get("college").toString();
-            
-
-            SharedPreferences.Editor editor = pref.edit();
-
-            editor.putString("college",college);
-            
-
-            editor.apply();
-            subot7.setText(college);
-
-
-        } catch (Exception ex) {
 
             String gj2 = pref.getString("college","Set college");
 
             subot7.setText(gj2);
 
+
+        } catch (Exception ex) {
+
+            Toast.makeText(this, "Ошибка", Toast.LENGTH_SHORT).show();
         }
 
 

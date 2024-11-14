@@ -114,7 +114,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/roundwhite"
-                >
+                android:onClick="GoToSing">
 
                 <TextView
                     android:id="@+id/textView93"
@@ -125,7 +125,7 @@
                     android:layout_marginLeft="10dp"
                     android:text="Продолжить"
                     android:textSize="20dp"
-                    android:onClick="GoToSing"
+
                     />
             </LinearLayout>
 
