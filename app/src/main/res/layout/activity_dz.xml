@@ -15,289 +15,352 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+     >
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:background="@color/bluegreen">
 
             <TextView
                 android:id="@+id/textView15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:text="Домашняя работа"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:textSize="26dp"/>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:background="@color/grey"
+                android:alpha="0.5"
+                android:layout_gravity="center"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="-50dp"
+                >
 
                 <TextView
                     android:id="@+id/textView16"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:layout_width="109dp"
+                    android:layout_height="30dp"
+                    android:text="TEXT"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="match_parent"
+                    android:layout_width="40dp"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-32dp"
+                    app:srcCompat="@android:drawable/ic_dialog_dialer" />
             </LinearLayout>
         </LinearLayout>
 
         <TextView
             android:id="@+id/textView17"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="50dp"
+            android:text="Задания на завтра"
+            android:textSize="30dp"
+            android:textColor="@color/grey7"
+            android:gravity="center"
+            android:layout_marginTop="15dp"/>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundgray7"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="69dp"
+                android:background="@drawable/roundgraybordgrey7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="Алгебра"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+            </LinearLayout>
+
             <TextView
-                android:id="@+id/textView18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:id="@+id/textView61"
+                android:layout_width="115dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="-61dp"
+                android:gravity="center"
+                android:text="Заданно на 18.09.24"
+                android:textColor="@color/white" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="113dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="-51dp"
+                android:gravity="center"
+                android:text="Заданно 18.09.24"
+                android:textColor="@color/white" />
 
-                <TextView
-                    android:id="@+id/textView21"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView22"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundgray7"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="69dp"
+                android:background="@drawable/roundgraybordgrey7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="Алгебра"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+            </LinearLayout>
+
             <TextView
-                android:id="@+id/textView18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:id="@+id/textView64"
+                android:layout_width="115dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="-61dp"
+                android:gravity="center"
+                android:text="Заданно на 18.09.24"
+                android:textColor="@color/white" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="113dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="-51dp"
+                android:gravity="center"
+                android:text="Заданно 18.09.24"
+                android:textColor="@color/white" />
 
-                <TextView
-                    android:id="@+id/textView21"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView22"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundgray7"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="69dp"
+                android:background="@drawable/roundgraybordgrey7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView66"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="Алгебра"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+            </LinearLayout>
+
             <TextView
-                android:id="@+id/textView18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:id="@+id/textView67"
+                android:layout_width="115dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="-61dp"
+                android:gravity="center"
+                android:text="Заданно на 18.09.24"
+                android:textColor="@color/white" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="113dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="-51dp"
+                android:gravity="center"
+                android:text="Заданно 18.09.24"
+                android:textColor="@color/white" />
 
-                <TextView
-                    android:id="@+id/textView21"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView22"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundgray7"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="69dp"
+                android:background="@drawable/roundgraybordgrey7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView69"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="Алгебра"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+            </LinearLayout>
+
             <TextView
-                android:id="@+id/textView18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:id="@+id/textView70"
+                android:layout_width="115dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="-61dp"
+                android:gravity="center"
+                android:text="Заданно на 18.09.24"
+                android:textColor="@color/white" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="113dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="-51dp"
+                android:gravity="center"
+                android:text="Заданно 18.09.24"
+                android:textColor="@color/white" />
 
-                <TextView
-                    android:id="@+id/textView21"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView22"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundgray7"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="69dp"
+                android:background="@drawable/roundgraybordgrey7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView72"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="Алгебра"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+            </LinearLayout>
+
             <TextView
-                android:id="@+id/textView18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:id="@+id/textView73"
+                android:layout_width="115dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="-61dp"
+                android:gravity="center"
+                android:text="Заданно на 18.09.24"
+                android:textColor="@color/white" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView74"
+                android:layout_width="113dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="-51dp"
+                android:gravity="center"
+                android:text="Заданно 18.09.24"
+                android:textColor="@color/white" />
 
-                <TextView
-                    android:id="@+id/textView21"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView22"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundgray7">
+
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="69dp"
+                android:orientation="vertical"
+                android:background="@drawable/roundgraybordgrey7">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Алгебра" android:textSize="23dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"/>
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/textView18"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:id="@+id/textView21"
+                android:layout_width="115dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="-61dp"
+                android:gravity="center"
+                android:text="Заданно на 18.09.24"
+                android:textColor="@color/white"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="113dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="-51dp"
+                android:gravity="center"
+                android:text="Заданно 18.09.24"
+                android:textColor="@color/white"/>
 
-                <TextView
-                    android:id="@+id/textView21"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView22"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-            </LinearLayout>
         </LinearLayout>
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
