@@ -15,35 +15,54 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20dp">
 
         <TextView
             android:id="@+id/textView45"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Поздравляем"
+            android:textColor="@color/white"
+            android:textSize="40dp"/>
 
         <TextView
             android:id="@+id/textView46"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Миссия выполнена" android:textColor="@color/white"
+            android:textSize="20dp" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_launcher_background" />
+            android:layout_height="250dp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/img" />
 
-        <FrameLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="70dp"
+            android:layout_marginTop="140dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/roundblu">
 
             <TextView
                 android:id="@+id/textView47"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
-        </FrameLayout>
+                android:gravity="center"
+                android:text="Далее"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                />
+        </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
