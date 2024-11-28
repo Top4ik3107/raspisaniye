@@ -64,7 +64,15 @@ public class adminpanelRazdelenie extends AppCompatActivity {
     public void GoToSchedule(View view) {
         if (subot7.getText().toString().equals("Set college")) {
             Toast.makeText(this, "Set college", Toast.LENGTH_SHORT).show();
-        }else { Intent intent = new Intent(this, adminpanel4.class);
+        }else {
+
+            pref = getSharedPreferences("data", MODE_PRIVATE);
+            SharedPreferences.Editor editor = pref.edit();
+            editor.putString("func", "R");
+            editor.apply();
+
+            Intent intent = new Intent(this, adminpanel3.class);
+
             startActivity(intent);
         }
 

@@ -3,6 +3,7 @@ package com.example.raspisaniye;
 import static java.lang.reflect.Array.set;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -24,6 +25,7 @@ import java.util.Map;
 public class adminpanel_create extends AppCompatActivity {
     EditText editTextText, editTextText2, editTextText3, editTextText4, editTextText5;
     FirebaseFirestore firestore;
+    private SharedPreferences pref;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,12 +36,16 @@ public class adminpanel_create extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        pref = getSharedPreferences("data", MODE_PRIVATE);
+
+
         firestore = FirebaseFirestore.getInstance();
         editTextText = findViewById(R.id.editTextText);
         editTextText2 = findViewById(R.id.editTextText2);
         editTextText3 = findViewById(R.id.editTextText3);
         editTextText4 = findViewById(R.id.editTextText4);
         editTextText5 = findViewById(R.id.editTextText5);
+
 
     }
     public void Addcollege(View view) {
@@ -57,6 +63,12 @@ public class adminpanel_create extends AppCompatActivity {
             if (!password.equals(password2)) {
                 Toast.makeText(this, "Пароли не совпадают", Toast.LENGTH_SHORT).show();
             } else {
+                SharedPreferences.Editor editor = pref.edit();
+                editor.putString("name", name);
+                editor.putString("city", city);
+                editor.putString("email", email);
+                editor.putString("password", password);
+                editor.apply();
 
 
                 DocumentReference Fc = firestore.collection("College").document(name);

@@ -14,4 +14,5 @@
     <color name="grey8">#FFFFFF</color>
     <color name="sm">#55A49D</color>
     <color name="sf4">#EDEDED</color>
+    <color name="alp">#50000000</color>
 </resources>
