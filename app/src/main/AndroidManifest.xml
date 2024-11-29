@@ -41,9 +41,7 @@
         <activity
             android:name=".adminpanel8"
             android:exported="false" />
-        <activity
-            android:name=".adminpanel7"
-            android:exported="false" />
+
         <activity
             android:name=".adminpanelCollege"
             android:exported="false" />
@@ -66,7 +64,7 @@
             android:name=".Secondr"
             android:exported="false" />
         <activity
-            android:name=".Mainr"
+            android:name=".Privet"
             android:exported="false" />
         <activity
             android:name=".dz"
@@ -78,7 +76,7 @@
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".Privet"
+            android:name=".Mainr"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

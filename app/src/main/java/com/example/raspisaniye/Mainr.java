@@ -14,7 +14,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.firestore.FirebaseFirestore;
+
 public class Mainr extends AppCompatActivity {
+    FirebaseFirestore firestore;
+    private SharedPreferences pref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +31,10 @@ public class Mainr extends AppCompatActivity {
             return insets;
 
         });
+        pref = getSharedPreferences("data", MODE_PRIVATE);
 
+
+        firestore = FirebaseFirestore.getInstance();
     }
 
     public void GoTosecond(View view) {
@@ -55,7 +62,24 @@ public class Mainr extends AppCompatActivity {
         Intent intent = new Intent(this, adminpanelPassword.class);
         startActivity(intent);
     }
+    private void testgo() {
+        String first = pref.getString("first", "0");
+        if (first.equals("0")) {
+            Intent intent = new Intent(this, Privet.class);
+            SharedPreferences.Editor editor = pref.edit();
+            editor.putString("first", "1");
+            editor.apply();
+            startActivity(intent);
+        }
+        else{
+            update();
+        }
 
+    }
+    private void update() {
+
+
+    }
 
 
 
