@@ -57,7 +57,7 @@
             android:layout_height="40dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/roundblu"
-            android:onClick="Add">
+           >
 
             <TextView
                 android:id="@+id/textView11"

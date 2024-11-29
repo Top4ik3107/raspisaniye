@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -18,10 +19,12 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -32,7 +35,7 @@ public class adminpanel3 extends AppCompatActivity {
     private String gj2, y;
     private Integer h;
     private FrameLayout fy1, fy2, fy3, fy4;
-    FirebaseFirestore firestore;
+    FirebaseFirestore firestore;String text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +48,7 @@ public class adminpanel3 extends AppCompatActivity {
 
 
         });
+        y = "Year1";
         firestore = FirebaseFirestore.getInstance();
         pref = getSharedPreferences("data", MODE_PRIVATE);
         fy1 = findViewById(R.id.f1);
@@ -52,6 +56,23 @@ public class adminpanel3 extends AppCompatActivity {
         fy3 = findViewById(R.id.fy3);
         fy4 = findViewById(R.id.fy4);
         gj2 = pref.getString("func", "блять, как ты сюда попал?!!?!?!");
+        update();
+
+        fy1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Действие при нажатии
+                EditText editText = findViewById(R.id.editTextText9);
+
+                text = editText.getText().toString();
+                String name = pref.getString("name","умпа лумпа ча ча ча");
+
+                DocumentReference ps = firestore.collection("College").document(name).collection("Year").document(y);
+
+                ps.collection("group").document(text).set(new HashMap<>());
+
+            }
+        });
 
 
     }
@@ -85,36 +106,49 @@ public class adminpanel3 extends AppCompatActivity {
 
     }
     public void Add(View view) {
-        EditText editText = findViewById(R.id.editTextText9);
-        String text = editText.getText().toString();
-        String name = pref.getString("name","умпа лумпа ча ча ча");
-
-        DocumentReference ps = firestore.collection("College").document(name).collection("Year").document(y);
-
-        DocumentSnapshot document = ps.get().getResult(); // get() блокирует поток до получения документа
-
-        if (document.exists()) {
-            // Если документ существует, выводим его данные
-            System.out.println("Документ найден!");
-            System.out.println("Данные документа: " + document.getData());
-        } else {
-            System.out.println("Документ не найден.");
-        }
-
-
-
-
-
-//                    Map<String, Object> curs = new HashMap<>();
-//                    for (int i = 1; i <= fieldCount; i++) {
-//                        curs.put("Day" + i, "test");
-//
-//                    }
-//                    curs.put("Group",text);
-//
-//
-//
-//                    ps.set(curs);
 
     }
+    private void update(){
+        String name = pref.getString("name","умпа лумпа ча ча ча");
+        DocumentReference ps = firestore.collection("College").document(name).collection("Year").document(y);
+
+
+        Task<QuerySnapshot> db = ps.collection("group")
+                .get()
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        QuerySnapshot querySnapshot = task.getResult();
+                        if (querySnapshot != null) {
+                            for (QueryDocumentSnapshot document : querySnapshot) {
+
+                                System.out.println("ID: " + document.getId());
+                                System.out.println("Data: " + document.getData());
+                                LinearLayout linearLayout = findViewById(R.id.group_group);
+
+                                // Создаем LayoutInflater
+                                LayoutInflater inflater = LayoutInflater.from(this);
+
+                                // Добавляем элементы в LinearLayout
+
+                                    // Разворачиваем item_layout.xml
+                                View itemView = inflater.inflate(R.layout.group, linearLayout, false);
+
+                                    // Можно изменить содержимое itemView, например, установить текст
+                                TextView textView = itemView.findViewById(R.id.textView96);
+                                textView.setText(document.getId());
+
+                                    // Добавляем itemView в LinearLayout
+                                linearLayout.addView(itemView);
+
+
+                            }
+                        } else {
+                            System.out.println("No documents found.");
+                        }
+                    } else {
+                        System.err.println("Error getting documents: " + task.getException());
+                    }
+                });
+    }
+
 }
