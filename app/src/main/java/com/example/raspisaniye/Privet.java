@@ -29,7 +29,7 @@ public class Privet extends AppCompatActivity {
     }
 
     public void GoToLogin(View view) {
-        Intent intent = new Intent(this, Login.class);
+        Intent intent = new Intent(this, Obuchenie.class);
         startActivity(intent);
     }
 }

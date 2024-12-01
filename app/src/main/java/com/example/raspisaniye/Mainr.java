@@ -31,8 +31,9 @@ public class Mainr extends AppCompatActivity {
             return insets;
 
         });
-        pref = getSharedPreferences("data", MODE_PRIVATE);
 
+        pref = getSharedPreferences("data", MODE_PRIVATE);
+        testgo();
 
         firestore = FirebaseFirestore.getInstance();
     }
@@ -63,6 +64,7 @@ public class Mainr extends AppCompatActivity {
         startActivity(intent);
     }
     private void testgo() {
+        pref = getSharedPreferences("data", MODE_PRIVATE);
         String first = pref.getString("first", "0");
         if (first.equals("0")) {
             Intent intent = new Intent(this, Privet.class);

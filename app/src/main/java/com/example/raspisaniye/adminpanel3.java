@@ -51,28 +51,15 @@ public class adminpanel3 extends AppCompatActivity {
         y = "Year1";
         firestore = FirebaseFirestore.getInstance();
         pref = getSharedPreferences("data", MODE_PRIVATE);
-        fy1 = findViewById(R.id.f1);
+
         fy2 = findViewById(R.id.fy2);
         fy3 = findViewById(R.id.fy3);
         fy4 = findViewById(R.id.fy4);
         gj2 = pref.getString("func", "блять, как ты сюда попал?!!?!?!");
         update();
+        pref = getSharedPreferences("data", MODE_PRIVATE);
+        fy1 = findViewById(R.id.f1);
 
-        fy1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Действие при нажатии
-                EditText editText = findViewById(R.id.editTextText9);
-
-                text = editText.getText().toString();
-                String name = pref.getString("name","умпа лумпа ча ча ча");
-
-                DocumentReference ps = firestore.collection("College").document(name).collection("Year").document(y);
-
-                ps.collection("group").document(text).set(new HashMap<>());
-
-            }
-        });
 
 
     }
@@ -80,22 +67,26 @@ public class adminpanel3 extends AppCompatActivity {
     public void y1(View view) {
         h = 1;
         y = "Year1";
+        update();
 
     }
 
     public void y4(View view) {
         h = 4;
         y = "Year4";
+        update();
     }
 
     public void y3(View view) {
         h = 3;
         y = "Year3";
+        update();
     }
 
     public void y2(View view) {
         h = 2;
         y = "Year2";
+        update();
     }
 
     public void AddGroup(View view) {
@@ -105,14 +96,30 @@ public class adminpanel3 extends AppCompatActivity {
         frameLayout.addView(contentView);
 
     }
-    public void Add(View view) {
-
+    public void exit(View view) {
+        FrameLayout frameLayout = findViewById(R.id.panini);
+        frameLayout.removeAllViews();
     }
-    private void update(){
-        String name = pref.getString("name","умпа лумпа ча ча ча");
+    public void Add(View view) {
+        Toast.makeText(this,"dfd",Toast.LENGTH_SHORT).show();
+        pref = getSharedPreferences("data", MODE_PRIVATE);
+        fy1 = findViewById(R.id.f1);
+        EditText editText = findViewById(R.id.editTextText9);
+
+        text = editText.getText().toString();
+        String name = pref.getString("college","умпа лумпа ча ча ча");
+
         DocumentReference ps = firestore.collection("College").document(name).collection("Year").document(y);
 
-
+        ps.collection("group").document(text).set(new HashMap<>());
+        update();
+    }
+    private void update(){
+        String name = pref.getString("college","умпа лумпа ча ча ча");
+        Toast.makeText(this,name,Toast.LENGTH_SHORT).show();
+        DocumentReference ps = firestore.collection("College").document(name).collection("Year").document(y);
+        LinearLayout linearLayou = findViewById(R.id.group_group);
+        linearLayou.removeAllViews();
         Task<QuerySnapshot> db = ps.collection("group")
                 .get()
                 .addOnCompleteListener(task -> {
@@ -120,27 +127,14 @@ public class adminpanel3 extends AppCompatActivity {
                         QuerySnapshot querySnapshot = task.getResult();
                         if (querySnapshot != null) {
                             for (QueryDocumentSnapshot document : querySnapshot) {
-
                                 System.out.println("ID: " + document.getId());
                                 System.out.println("Data: " + document.getData());
                                 LinearLayout linearLayout = findViewById(R.id.group_group);
-
-                                // Создаем LayoutInflater
                                 LayoutInflater inflater = LayoutInflater.from(this);
-
-                                // Добавляем элементы в LinearLayout
-
-                                    // Разворачиваем item_layout.xml
                                 View itemView = inflater.inflate(R.layout.group, linearLayout, false);
-
-                                    // Можно изменить содержимое itemView, например, установить текст
                                 TextView textView = itemView.findViewById(R.id.textView96);
                                 textView.setText(document.getId());
-
-                                    // Добавляем itemView в LinearLayout
                                 linearLayout.addView(itemView);
-
-
                             }
                         } else {
                             System.out.println("No documents found.");
