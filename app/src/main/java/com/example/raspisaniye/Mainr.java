@@ -81,9 +81,9 @@ public class Mainr extends AppCompatActivity {
 
         pref = getSharedPreferences("data", MODE_PRIVATE);
         firestore = FirebaseFirestore.getInstance();
-        group = pref.getString("group","Set group");
-        year = pref.getString("year","Set year");
-        college = pref.getString("college","Set college");
+        group = pref.getString("group","p1a");
+        year = pref.getString("year","Year1");
+        college = pref.getString("college","test");
         testgo();
 
 
@@ -165,8 +165,8 @@ public class Mainr extends AppCompatActivity {
         dayfind();
         initializeFirestoreReferences();
         updateUIWithFirestoreData();
-        updateClassAndSchoolTextViews();
-        initTime();
+//        updateClassAndSchoolTextViews();
+//        initTime();
 
     }
     private void dayfind() {
@@ -271,10 +271,10 @@ public class Mainr extends AppCompatActivity {
         }
     }
 
-    private void updateClassAndSchoolTextViews() {
-        classTextView.setText(claccw + simbolw);
-        schoolTextView.setText("School №" + schoolw);
-    }
+//    private void updateClassAndSchoolTextViews() {
+//        classTextView.setText(claccw + simbolw);
+//        schoolTextView.setText("School №" + schoolw);
+//    }
 
     private void initTime() {
         CollectionReference clacc = firestore.collection("College").document(college).collection("Year").document(year).collection("group").document(group).collection("lessons");
@@ -411,7 +411,7 @@ public class Mainr extends AppCompatActivity {
 
     private void checkPendingTasks() {
         if (pendingTasks == 0) {
-            timep();
+//            timep();
         }
     }
 
