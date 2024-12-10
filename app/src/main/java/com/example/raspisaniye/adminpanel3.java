@@ -2,6 +2,7 @@ package com.example.raspisaniye;
 
 
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -145,4 +146,21 @@ public class adminpanel3 extends AppCompatActivity {
                 });
     }
 
+
+    public void addShadle(View view) {
+
+        pref = getSharedPreferences("data", MODE_PRIVATE);
+        TextView textView = findViewById(R.id.textView96);
+        String text = textView.getText().toString();
+        pref.edit().putString("group",text).apply();
+        pref.edit().putString("year", y).apply();
+        if (gj2.equals("R")){
+
+            Intent intent = new Intent(this, adminpanel4.class);
+            startActivity(intent);
+        }else {
+            Intent intent = new Intent(this, adminpanel5.class);
+            startActivity(intent);
+        }
+    }
 }

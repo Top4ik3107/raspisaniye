@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Raspisaniye"
         tools:targetApi="31">
         <activity
+            android:name=".GroupActivity"
+            android:exported="false" />
+        <activity
             android:name=".addgroup"
             android:exported="false" />
         <activity
