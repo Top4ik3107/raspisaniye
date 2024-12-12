@@ -36,7 +36,8 @@ public class adminpanel3 extends AppCompatActivity {
     private String gj2, y;
     private Integer h;
     private FrameLayout fy1, fy2, fy3, fy4;
-    FirebaseFirestore firestore;String text;
+    FirebaseFirestore firestore;
+    String text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

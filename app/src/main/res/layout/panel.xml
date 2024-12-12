@@ -42,7 +42,8 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:background="@color/grey">
+                android:background="@color/grey"
+                android:onClick="GoToSelColl" >
 
                 <TextView
                     android:id="@+id/textView38"

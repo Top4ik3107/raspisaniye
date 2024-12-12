@@ -104,22 +104,20 @@ public class Mainr extends AppCompatActivity {
                 findViewById(R.id.pred1), findViewById(R.id.pred2), findViewById(R.id.pred3),
                 findViewById(R.id.pred4), findViewById(R.id.pred5)
         };
-//
-//        tt11 = findViewById(R.id.stime1);
-//        tt12 = findViewById(R.id.stime2);
-//        tt13 = findViewById(R.id.stime3);
-//        tt14 = findViewById(R.id.stime4);
-//        tt15 = findViewById(R.id.stime5);
-//        tt16 = findViewById(R.id.stime6);
-//        tt17 = findViewById(R.id.stime7);
-//
-//        tt21 = findViewById(R.id.time1);
-//        tt22 = findViewById(R.id.time2);
-//        tt23 = findViewById(R.id.time3);
-//        tt24 = findViewById(R.id.time4);
-//        tt25 = findViewById(R.id.time5);
-//        tt26 = findViewById(R.id.time6);
-//        tt27 = findViewById(R.id.time7);
+
+        tt11 = findViewById(R.id.stime1);
+        tt12 = findViewById(R.id.stime2);
+        tt13 = findViewById(R.id.stime3);
+        tt14 = findViewById(R.id.stime4);
+        tt15 = findViewById(R.id.stime5);
+
+
+        tt21 = findViewById(R.id.time1);
+        tt22 = findViewById(R.id.time2);
+        tt23 = findViewById(R.id.time3);
+        tt24 = findViewById(R.id.time4);
+        tt25 = findViewById(R.id.time5);
+
     }
 
     public void GoTosecond(View view) {
@@ -143,10 +141,25 @@ public class Mainr extends AppCompatActivity {
 
         }
     }
+
+
+
+
     public void GoToAdmPass(View view) {
         Intent intent = new Intent(this, adminpanelPassword.class);
         startActivity(intent);
     }
+    public void GoToSelColl(View view) {
+        Intent intent = new Intent(this, ViborRassilkiActivity.class);
+        startActivity(intent);
+    }
+
+
+
+
+
+
+
     private void testgo() {
         pref = getSharedPreferences("data", MODE_PRIVATE);
         String first = pref.getString("first", "0");
@@ -168,7 +181,7 @@ public class Mainr extends AppCompatActivity {
         initializeFirestoreReferences();
         updateUIWithFirestoreData();
 //        updateClassAndSchoolTextViews();
-//        initTime();
+        initTime();
 
     }
     private void dayfind() {
@@ -356,8 +369,7 @@ public class Mainr extends AppCompatActivity {
                 t13 = document.getString("урок3");
                 t14 = document.getString("урок4");
                 t15 = document.getString("урок5");
-                t16 = document.getString("урок6");
-                t17 = document.getString("урок7");
+
             }
         } else {
             showToast("Ошибка при выполнении запроса");
@@ -375,8 +387,7 @@ public class Mainr extends AppCompatActivity {
                 t23 = document.getString("урок3");
                 t24 = document.getString("урок4");
                 t25 = document.getString("урок5");
-                t26 = document.getString("урок6");
-                t27 = document.getString("урок7");
+
             }
         } else {
             showToast("Ошибка при выполнении запроса");
@@ -394,8 +405,7 @@ public class Mainr extends AppCompatActivity {
                 t13f = document.getString("урок3");
                 t14f = document.getString("урок4");
                 t15f = document.getString("урок5");
-                t16f = document.getString("урок6");
-                t17f = document.getString("урок7");
+
             }
         } else {
             showToast("Ошибка при выполнении запроса");
@@ -413,8 +423,7 @@ public class Mainr extends AppCompatActivity {
                 t23f = document.getString("урок3");
                 t24f = document.getString("урок4");
                 t25f = document.getString("урок5");
-                t26f = document.getString("урок6");
-                t27f = document.getString("урок7");
+
             }
         } else {
             showToast("Ошибка при выполнении запроса");
@@ -425,7 +434,7 @@ public class Mainr extends AppCompatActivity {
 
     private void checkPendingTasks() {
         if (pendingTasks == 0) {
-//            timep();
+            timep();
         }
     }
 
@@ -438,16 +447,14 @@ public class Mainr extends AppCompatActivity {
             timeRange13 = t13 + "-" + t13f;
             timeRange14 = t14 + "-" + t14f;
             timeRange15 = t15 + "-" + t15f;
-            timeRange16 = t16 + "-" + t16f;
-            timeRange17 = t17 + "-" + t17f;
+
 
             timeRange21 = "-";
             timeRange22 = "-";
             timeRange23 = "-";
             timeRange24 = "-";
             timeRange25 = "-";
-            timeRange26 = "-";
-            timeRange27 = "-";
+
 
         } else if (day.equals("7")) {
             timeRange11 = "-";
@@ -455,16 +462,14 @@ public class Mainr extends AppCompatActivity {
             timeRange13 = "-";
             timeRange14 = "-";
             timeRange15 = "-";
-            timeRange16 = "-";
-            timeRange17 = "-";
+
 
             timeRange21 = t21f + "-" + t21;
             timeRange22 = t22f + "-" + t22;
             timeRange23 = t23f + "-" + t23;
             timeRange24 = t24f + "-" + t24;
             timeRange25 = t25f + "-" + t25;
-            timeRange26 = t26f + "-" + t26;
-            timeRange27 = t27f + "-" + t27;
+
 
         } else {
             timeRange11 = t11 + "-" + t11f;
@@ -472,16 +477,14 @@ public class Mainr extends AppCompatActivity {
             timeRange13 = t13 + "-" + t13f;
             timeRange14 = t14 + "-" + t14f;
             timeRange15 = t15 + "-" + t15f;
-            timeRange16 = t16 + "-" + t16f;
-            timeRange17 = t17 + "-" + t17f;
+
 
             timeRange21 = t21f + "-" + t21;
             timeRange22 = t22f + "-" + t22;
             timeRange23 = t23f + "-" + t23;
             timeRange24 = t24f + "-" + t24;
             timeRange25 = t25f + "-" + t25;
-            timeRange26 = t26f + "-" + t26;
-            timeRange27 = t27f + "-" + t27;
+
         }
 
 
@@ -490,16 +493,14 @@ public class Mainr extends AppCompatActivity {
         tt13.setText(timeRange13);
         tt14.setText(timeRange14);
         tt15.setText(timeRange15);
-        tt16.setText(timeRange16);
-        tt17.setText(timeRange17);
+
 
         tt21.setText(timeRange21);
         tt22.setText(timeRange22);
         tt23.setText(timeRange23);
         tt24.setText(timeRange24);
         tt25.setText(timeRange25);
-        tt26.setText(timeRange26);
-        tt27.setText(timeRange27);
+
     }
 
     private void showToast(String message) {
