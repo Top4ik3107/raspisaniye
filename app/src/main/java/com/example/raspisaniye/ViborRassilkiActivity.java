@@ -96,9 +96,9 @@ public class ViborRassilkiActivity extends AppCompatActivity {
         Log.d(TAG, "addhadle: Saving selected college: " + text);
         pref.edit().putString("scollege", text).apply();
 
-        Intent intent = new Intent(this, adminpanel4.class);
+//        Intent intent = new Intent(this, adminpanel4.class);
         Log.d(TAG, "addhadle: Starting admin panel");
-        startActivity(intent);
+//        startActivity(intent);
     }
 
     public void Getras(View view) {

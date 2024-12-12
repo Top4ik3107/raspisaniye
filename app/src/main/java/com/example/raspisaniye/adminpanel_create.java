@@ -90,8 +90,8 @@ public class adminpanel_create extends AppCompatActivity {
                 personal.put("password", password);
                 ps.set(personal);
 
-
-
+                DocumentReference g = firestore.collection("data").document("coll").collection("c").document(name);
+                g.set(curs);
 
 
             }
