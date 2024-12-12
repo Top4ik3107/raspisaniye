@@ -56,7 +56,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="240dp"
+                    android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="7dp"
                     android:background="@drawable/roundgray"
@@ -65,11 +65,11 @@
 
                     <TextView
                         android:id="@+id/textView110"
-                        android:layout_width="70dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="1 пара"
+                        android:text="1 пара - "
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -99,31 +99,45 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="Кабинет"
+                        android:text="Каб."
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="67dp"
                     android:layout_height="match_parent"
+                    android:orientation="horizontal"
                     android:background="@drawable/roundgray"
-                    android:orientation="horizontal">
+
+                    >
 
                     <TextView
-                        android:id="@+id/textView114"
+                        android:id="@+id/stime1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
                         android:fontFamily="@font/light"
-                        android:text="Дз"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="10sp"
+                        android:text="00:00-00:00"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundgray"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="6dp"
+                    >
+
+
 
                     <ImageView
-                        android:id="@+id/imageView114"
+                        android:id="@+id/simg1"
                         android:layout_width="match_parent"
                         android:layout_height="20dp"
                         android:layout_gravity="center_vertical"
@@ -139,7 +153,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="240dp"
+                    android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="7dp"
                     android:background="@drawable/roundgray"
@@ -148,11 +162,11 @@
 
                     <TextView
                         android:id="@+id/textView210"
-                        android:layout_width="70dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="1 пара"
+                        android:text="2 пара - "
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -182,31 +196,43 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="Кабинет"
+                        android:text="Каб."
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
                 </LinearLayout>
 
+
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="67dp"
                     android:layout_height="match_parent"
-                    android:background="@drawable/roundgray"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@drawable/roundgray">
 
                     <TextView
-                        android:id="@+id/textView214"
+                        android:id="@+id/stime2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
                         android:fontFamily="@font/light"
-                        android:text="Дз"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="10sp"
+                        android:text="00:00-00:00"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundgray"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="6dp">
+
+
 
                     <ImageView
-                        android:id="@+id/imageView24"
+                        android:id="@+id/simg2"
                         android:layout_width="match_parent"
                         android:layout_height="20dp"
                         android:layout_gravity="center_vertical"
@@ -222,7 +248,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="240dp"
+                    android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="7dp"
                     android:background="@drawable/roundgray"
@@ -231,11 +257,11 @@
 
                     <TextView
                         android:id="@+id/textView310"
-                        android:layout_width="70dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="1 пара"
+                        android:text="3 пара - "
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -265,31 +291,42 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="Кабинет"
+                        android:text="Каб."
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="67dp"
                     android:layout_height="match_parent"
-                    android:background="@drawable/roundgray"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@drawable/roundgray">
 
                     <TextView
-                        android:id="@+id/textView314"
+                        android:id="@+id/stime3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
                         android:fontFamily="@font/light"
-                        android:text="Дз"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="10sp"
+                        android:text="00:00-00:00"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundgray"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="6dp">
+
+
 
                     <ImageView
-                        android:id="@+id/imageView34"
+                        android:id="@+id/simg3"
                         android:layout_width="match_parent"
                         android:layout_height="20dp"
                         android:layout_gravity="center_vertical"
@@ -305,7 +342,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="240dp"
+                    android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="7dp"
                     android:background="@drawable/roundgray"
@@ -314,11 +351,11 @@
 
                     <TextView
                         android:id="@+id/textView410"
-                        android:layout_width="70dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="1 пара"
+                        android:text="4 пара - "
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -348,31 +385,42 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="Кабинет"
+                        android:text="Каб."
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="67dp"
                     android:layout_height="match_parent"
-                    android:background="@drawable/roundgray"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@drawable/roundgray">
 
                     <TextView
-                        android:id="@+id/textView414"
+                        android:id="@+id/stime4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
                         android:fontFamily="@font/light"
-                        android:text="Дз"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="10sp"
+                        android:text="00:00-00:00"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundgray"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="6dp">
+
+
 
                     <ImageView
-                        android:id="@+id/imageView44"
+                        android:id="@+id/simg4"
                         android:layout_width="match_parent"
                         android:layout_height="20dp"
                         android:layout_gravity="center_vertical"
@@ -388,7 +436,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="240dp"
+                    android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="7dp"
                     android:background="@drawable/roundgray"
@@ -397,11 +445,11 @@
 
                     <TextView
                         android:id="@+id/textView510"
-                        android:layout_width="70dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="1 пара"
+                        android:text="5 пара - "
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -431,31 +479,42 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="Кабинет"
+                        android:text="Каб."
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="67dp"
                     android:layout_height="match_parent"
-                    android:background="@drawable/roundgray"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@drawable/roundgray">
 
                     <TextView
-                        android:id="@+id/textView514"
+                        android:id="@+id/stime5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
                         android:fontFamily="@font/light"
-                        android:text="Дз"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="10sp"
+                        android:text="00:00-00:00"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundgray"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="6dp">
+
+
 
                     <ImageView
-                        android:id="@+id/imageView54"
+                        android:id="@+id/simg5"
                         android:layout_width="match_parent"
                         android:layout_height="20dp"
                         android:layout_gravity="center_vertical"
@@ -525,7 +584,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="240dp"
+                    android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="7dp"
                     android:background="@drawable/roundgray"
@@ -534,11 +593,11 @@
 
                     <TextView
                         android:id="@+id/textView2110"
-                        android:layout_width="70dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="1 пара"
+                        android:text="1 пара - "
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -568,31 +627,42 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="Кабинет"
+                        android:text="Каб."
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="67dp"
                     android:layout_height="match_parent"
-                    android:background="@drawable/roundgray"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@drawable/roundgray">
 
                     <TextView
-                        android:id="@+id/textView2114"
+                        android:id="@+id/time1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
                         android:fontFamily="@font/light"
-                        android:text="Дз"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="10sp"
+                        android:text="00:00-00:00"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundgray"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="6dp">
+
+
 
                     <ImageView
-                        android:id="@+id/imageView2114"
+                        android:id="@+id/img1"
                         android:layout_width="match_parent"
                         android:layout_height="20dp"
                         android:layout_gravity="center_vertical"
@@ -608,7 +678,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="240dp"
+                    android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="7dp"
                     android:background="@drawable/roundgray"
@@ -617,11 +687,11 @@
 
                     <TextView
                         android:id="@+id/textView2210"
-                        android:layout_width="70dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="1 пара"
+                        android:text="2 пара - "
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -651,31 +721,42 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="Кабинет"
+                        android:text="Каб."
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="67dp"
                     android:layout_height="match_parent"
-                    android:background="@drawable/roundgray"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@drawable/roundgray">
 
                     <TextView
-                        android:id="@+id/textView2214"
+                        android:id="@+id/time2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
                         android:fontFamily="@font/light"
-                        android:text="Дз"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="10sp"
+                        android:text="00:00-00:00"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundgray"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="6dp">
+
+
 
                     <ImageView
-                        android:id="@+id/imageView224"
+                        android:id="@+id/img2"
                         android:layout_width="match_parent"
                         android:layout_height="20dp"
                         android:layout_gravity="center_vertical"
@@ -691,7 +772,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="240dp"
+                    android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="7dp"
                     android:background="@drawable/roundgray"
@@ -700,11 +781,11 @@
 
                     <TextView
                         android:id="@+id/textView2310"
-                        android:layout_width="70dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="1 пара"
+                        android:text="3 пара - "
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -734,31 +815,42 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="Кабинет"
+                        android:text="Каб."
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="67dp"
                     android:layout_height="match_parent"
-                    android:background="@drawable/roundgray"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@drawable/roundgray">
 
                     <TextView
-                        android:id="@+id/textView2314"
+                        android:id="@+id/time3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
                         android:fontFamily="@font/light"
-                        android:text="Дз"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="10sp"
+                        android:text="00:00-00:00"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundgray"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="6dp">
+
+
 
                     <ImageView
-                        android:id="@+id/imageView234"
+                        android:id="@+id/img3"
                         android:layout_width="match_parent"
                         android:layout_height="20dp"
                         android:layout_gravity="center_vertical"
@@ -774,7 +866,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="240dp"
+                    android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="7dp"
                     android:background="@drawable/roundgray"
@@ -783,11 +875,11 @@
 
                     <TextView
                         android:id="@+id/textView2410"
-                        android:layout_width="70dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="1 пара"
+                        android:text="4 пара - "
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -817,31 +909,42 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="Кабинет"
+                        android:text="Каб."
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="67dp"
                     android:layout_height="match_parent"
-                    android:background="@drawable/roundgray"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@drawable/roundgray">
 
                     <TextView
-                        android:id="@+id/textView2414"
+                        android:id="@+id/time4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
                         android:fontFamily="@font/light"
-                        android:text="Дз"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="10sp"
+                        android:text="00:00-00:00"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundgray"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="6dp">
+
+
 
                     <ImageView
-                        android:id="@+id/imageView244"
+                        android:id="@+id/img4"
                         android:layout_width="match_parent"
                         android:layout_height="20dp"
                         android:layout_gravity="center_vertical"
@@ -857,7 +960,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="240dp"
+                    android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="7dp"
                     android:background="@drawable/roundgray"
@@ -866,11 +969,11 @@
 
                     <TextView
                         android:id="@+id/textView2510"
-                        android:layout_width="70dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="1 пара"
+                        android:text="5 пара - "
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -900,31 +1003,42 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
-                        android:text="Кабинет"
+                        android:text="Каб."
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="67dp"
                     android:layout_height="match_parent"
-                    android:background="@drawable/roundgray"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="@drawable/roundgray">
 
                     <TextView
-                        android:id="@+id/textView2514"
+                        android:id="@+id/time5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
                         android:fontFamily="@font/light"
-                        android:text="Дз"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="10sp"
+                        android:text="00:00-00:00"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundgray"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="6dp">
+
+
 
                     <ImageView
-                        android:id="@+id/imageView254"
+                        android:id="@+id/img5"
                         android:layout_width="match_parent"
                         android:layout_height="20dp"
                         android:layout_gravity="center_vertical"
