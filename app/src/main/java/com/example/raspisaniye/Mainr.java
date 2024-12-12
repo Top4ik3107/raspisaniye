@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import java.util.Calendar;
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -162,6 +163,7 @@ public class Mainr extends AppCompatActivity {
 
     }
     private void update() {
+        initUI();
         dayfind();
         initializeFirestoreReferences();
         updateUIWithFirestoreData();
@@ -240,25 +242,37 @@ public class Mainr extends AppCompatActivity {
         if ("6".equals(day)) {
             updateTextViews(tomorrowLessons, "Завтра нет уроков");
         } else {
-            updateLessonsFromFirestore(gg, tomorrowLessons);
+                       updateLessonsFromFirestore(gg, tomorrowLessons);
         }
     }
 
     private void updateLessonsFromFirestore(DocumentReference docRef, TextView[] textViews) {
+        if (textViews == null || textViews.length == 0) {
+            showToast("Ошибка: массив textViews не инициализирован или пуст");
+            return;
+        }
+
         pendingTasks++;
         docRef.get().addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
                 DocumentSnapshot document = task.getResult();
                 if (document != null && document.exists()) {
                     for (int i = 0; i < textViews.length; i++) {
-                        String lesson = document.getString("урок" + (i + 1));
-                        textViews[i].setText(lesson != null && !lesson.isEmpty() ? lesson : "-");
+                        String lessonKey = "урок" + (i + 1);
+                        String lesson = document.getString(lessonKey);
+                        if (lesson != null && !lesson.isEmpty()) {
+                            textViews[i].setText(lesson);
+                        } else {
+                            textViews[i].setText("-");
+                            showToast("Урок " + (i + 1) + " не найден в документе");
+                        }
                     }
                 } else {
-                    showToast("Документ не найен");
+                    showToast("Документ отсутствует или не существует: " + (document != null ? document.getId() : "null"));
                 }
             } else {
-                showToast("Ошибка при выполнении запроса");
+                Exception exception = task.getException();
+                showToast("Ошибка выполнения запроса: " + (exception != null ? exception.getMessage() : "неизвестная ошибка"));
             }
             pendingTasks--;
             checkPendingTasks();

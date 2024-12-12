@@ -115,52 +115,52 @@ public class adminpanel3 extends AppCompatActivity {
         ps.collection("group").document(text).set(new HashMap<>());
         update();
     }
-    private void update(){
-        String name = pref.getString("college","умпа лумпа ча ча ча");
-        Toast.makeText(this,name,Toast.LENGTH_SHORT).show();
+    private void update() {
+        String name = pref.getString("college", "умпа лумпа ча ча ча");
+        Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
         DocumentReference ps = firestore.collection("College").document(name).collection("Year").document(y);
-        LinearLayout linearLayou = findViewById(R.id.group_group);
-        linearLayou.removeAllViews();
-        Task<QuerySnapshot> db = ps.collection("group")
-                .get()
-                .addOnCompleteListener(task -> {
-                    if (task.isSuccessful()) {
-                        QuerySnapshot querySnapshot = task.getResult();
-                        if (querySnapshot != null) {
-                            for (QueryDocumentSnapshot document : querySnapshot) {
-                                System.out.println("ID: " + document.getId());
-                                System.out.println("Data: " + document.getData());
-                                LinearLayout linearLayout = findViewById(R.id.group_group);
-                                LayoutInflater inflater = LayoutInflater.from(this);
-                                View itemView = inflater.inflate(R.layout.group, linearLayout, false);
-                                TextView textView = itemView.findViewById(R.id.textView96);
-                                textView.setText(document.getId());
-                                linearLayout.addView(itemView);
-                            }
-                        } else {
-                            System.out.println("No documents found.");
-                        }
-                    } else {
-                        System.err.println("Error getting documents: " + task.getException());
+        LinearLayout linearLayout = findViewById(R.id.group_group);
+        linearLayout.removeAllViews();
+
+        ps.collection("group").get().addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {
+                QuerySnapshot querySnapshot = task.getResult();
+                if (querySnapshot != null) {
+                    for (QueryDocumentSnapshot document : querySnapshot) {
+                        View itemView = LayoutInflater.from(this).inflate(R.layout.group, linearLayout, false);
+                        TextView textView = itemView.findViewById(R.id.textView96);
+                        textView.setText(document.getId());
+
+                        // Добавляем обработчик клика
+                        itemView.setOnClickListener(v -> {
+                            text = document.getId(); // Запоминаем выбранный элемент
+                            addhadle();
+                            Toast.makeText(this, "Selected: " + text, Toast.LENGTH_SHORT).show();
+                        });
+
+                        linearLayout.addView(itemView);
                     }
-                });
+                } else {
+                    System.out.println("No documents found.");
+                }
+            } else {
+                System.err.println("Error getting documents: " + task.getException());
+            }
+        });
     }
 
 
-    public void addShadle(View view) {
-
-        pref = getSharedPreferences("data", MODE_PRIVATE);
-        TextView textView = findViewById(R.id.textView96);
-        String text = textView.getText().toString();
-        pref.edit().putString("group",text).apply();
-        pref.edit().putString("year", y).apply();
-        if (gj2.equals("R")){
-
-            Intent intent = new Intent(this, adminpanel4.class);
-            startActivity(intent);
-        }else {
-            Intent intent = new Intent(this, adminpanel5.class);
-            startActivity(intent);
+    public void addhadle() {
+        if (text == null || text.isEmpty()) {
+            Toast.makeText(this, "Please select a group first!", Toast.LENGTH_SHORT).show();
+            return;
         }
+
+        pref.edit().putString("group", text).apply();
+        pref.edit().putString("year", y).apply();
+
+        Intent intent = gj2.equals("R") ? new Intent(this, adminpanel4.class) : new Intent(this, adminpanel5.class);
+        startActivity(intent);
     }
+
 }
