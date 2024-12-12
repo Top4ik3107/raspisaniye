@@ -48,7 +48,7 @@
                     android:id="@+id/textView38"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Рассылки"
+                    android:text="Выбрать Колледж"
                     android:background="@color/grey4"
                     android:textColor="@color/white"
                     android:gravity="center"
