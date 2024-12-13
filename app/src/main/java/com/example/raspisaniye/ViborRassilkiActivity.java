@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -95,6 +96,16 @@ public class ViborRassilkiActivity extends AppCompatActivity {
 
         Log.d(TAG, "addhadle: Saving selected college: " + text);
         pref.edit().putString("scollege", text).apply();
+
+        FrameLayout frameLayout = findViewById(R.id.contein);
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View contentView = inflater.inflate(R.layout.activity_get_year, frameLayout, false);
+        frameLayout.addView(contentView);
+
+
+
+
+
 
 //        Intent intent = new Intent(this, adminpanel4.class);
         Log.d(TAG, "addhadle: Starting admin panel");

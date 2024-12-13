@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Raspisaniye"
         tools:targetApi="31">
         <activity
+            android:name=".GetYear"
+            android:exported="false" />
+        <activity
             android:name=".ViborRassilki3Activity"
             android:exported="false" />
         <activity

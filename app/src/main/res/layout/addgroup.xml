@@ -8,7 +8,6 @@
     tools:context=".addgroup"
     android:background="@color/alp"
     android:onClick="exit"
-
     >
 
     <LinearLayout

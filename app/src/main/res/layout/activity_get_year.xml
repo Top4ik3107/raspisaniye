@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetYear"
+    android:background="@color/alp"
+    android:onClick="exit"
+    >
+
+    <LinearLayout
+        android:id="@+id/mainl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/roundgraybord"
+        android:padding="20dp"
+
+        >
+
+        <TextView
+            android:id="@+id/textView97"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/thin"
+            android:gravity="center"
+            android:text="Выберите свой курс"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <FrameLayout
+            android:id="@+id/Y1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/roundblu"
+            android:paddingHorizontal="40dp"
+            android:onClick="Add1">
+
+            <TextView
+                android:id="@+id/Year1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1 Курс" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/Y2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/roundblu"
+            android:onClick="Add2">
+
+            <TextView
+                android:id="@+id/Year2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="2 Курс" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/Y3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/roundblu"
+            android:onClick="Add3">
+
+            <TextView
+                android:id="@+id/Year3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="3 Курс" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/f1"
+            android:onClick="Add4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/roundblu"
+            >
+
+            <TextView
+                android:id="@+id/Year4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="4 Курс" />
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
