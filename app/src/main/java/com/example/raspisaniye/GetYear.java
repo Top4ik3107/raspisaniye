@@ -1,5 +1,6 @@
 package com.example.raspisaniye;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -26,18 +27,30 @@ public class GetYear extends AppCompatActivity {
     }
 
     public void Add1(View view) {
+
         pref.edit().putString("syear","Year1").apply();
+        Intent intent = new Intent(this,ViborRasspiski2Activity.class);
+        startActivity(intent);
     }
 
     public void Add2(View view) {
+
         pref.edit().putString("syear","Year2").apply();
+        Intent intent = new Intent(this,ViborRasspiski2Activity.class);
+        startActivity(intent);
     }
 
     public void Add3(View view) {
+
         pref.edit().putString("syear","Year3").apply();
+        Intent intent = new Intent(this,ViborRasspiski2Activity.class);
+        startActivity(intent);
     }
 
     public void Add4(View view) {
+
         pref.edit().putString("syear","Year4").apply();
+        Intent intent = new Intent(this,ViborRasspiski2Activity.class);
+        startActivity(intent);
     }
 }

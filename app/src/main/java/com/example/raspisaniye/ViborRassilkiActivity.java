@@ -96,15 +96,12 @@ public class ViborRassilkiActivity extends AppCompatActivity {
 
         Log.d(TAG, "addhadle: Saving selected college: " + text);
         pref.edit().putString("scollege", text).apply();
+        Toast.makeText(this,"нач",Toast.LENGTH_SHORT).show();
 
-        FrameLayout frameLayout = findViewById(R.id.contein);
+        FrameLayout frameLayout = findViewById(R.id.panini);
         LayoutInflater inflater = LayoutInflater.from(this);
         View contentView = inflater.inflate(R.layout.activity_get_year, frameLayout, false);
         frameLayout.addView(contentView);
-
-
-
-
 
 
 //        Intent intent = new Intent(this, adminpanel4.class);
@@ -117,4 +114,43 @@ public class ViborRassilkiActivity extends AppCompatActivity {
         Toast.makeText(this, "Refreshing list", Toast.LENGTH_SHORT).show();
         update();
     }
+
+    public void Add1(View view) {
+
+        pref.edit().putString("syear","Year1").apply();
+        Intent intent = new Intent(this,ViborRasspiski2Activity.class);
+        startActivity(intent);
+    }
+
+    public void Add2(View view) {
+
+        pref.edit().putString("syear","Year2").apply();
+        Intent intent = new Intent(this,ViborRasspiski2Activity.class);
+        startActivity(intent);
+    }
+
+    public void Add3(View view) {
+
+        pref.edit().putString("syear","Year3").apply();
+        Intent intent = new Intent(this,ViborRasspiski2Activity.class);
+        startActivity(intent);
+    }
+
+    public void Add4(View view) {
+
+        pref.edit().putString("syear","Year4").apply();
+        Intent intent = new Intent(this,ViborRasspiski2Activity.class);
+        startActivity(intent);
+    }
+
+
+
+
+
+
+
+
+
+
+
 }

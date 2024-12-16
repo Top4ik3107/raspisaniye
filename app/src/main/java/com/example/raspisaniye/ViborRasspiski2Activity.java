@@ -21,7 +21,7 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
 public class ViborRasspiski2Activity extends AppCompatActivity {
-
+    String y;
     FirebaseFirestore firestore;
     private SharedPreferences pref;
     String text;
@@ -37,12 +37,14 @@ public class ViborRasspiski2Activity extends AppCompatActivity {
         });
         pref = getSharedPreferences("data", MODE_PRIVATE);
         firestore = FirebaseFirestore.getInstance();
+        y = pref.getString("syear","Year1");
+        update();
 
     }
     private void update() {
         String name = pref.getString("college", "умпа лумпа ча ча ча");
         Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
-        DocumentReference ps = firestore.collection("College").document(name).collection("Year").document("Year1");
+        DocumentReference ps = firestore.collection("College").document(name).collection("Year").document(y);
         LinearLayout linearLayout = findViewById(R.id.group_group);
         linearLayout.removeAllViews();
 
@@ -81,7 +83,7 @@ public class ViborRasspiski2Activity extends AppCompatActivity {
         pref.edit().putString("sgroup", text).apply();
 
 
-        Intent intent = new Intent(this, adminpanel4.class);
+        Intent intent = new Intent(this, ViborRassilki3Activity.class);
         startActivity(intent);
     }
 }

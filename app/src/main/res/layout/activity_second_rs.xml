@@ -21,7 +21,7 @@
         android:gravity="center_horizontal">
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/clacs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
@@ -67,7 +67,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView14"
+                            android:id="@+id/p11"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -85,7 +85,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView54"
+                            android:id="@+id/p12"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -103,7 +103,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView55"
+                            android:id="@+id/p13"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -120,7 +120,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView56"
+                            android:id="@+id/p14"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -137,7 +137,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView57"
+                            android:id="@+id/p15"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -159,7 +159,7 @@
                         android:id="@+id/textView10"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="TextView"
+                        android:text="Понедельник"
                         android:fontFamily="@font/thin"
                         android:gravity="center"
                         android:textColor="@color/white"
@@ -193,7 +193,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView60"
+                            android:id="@+id/p21"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -210,7 +210,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView61"
+                            android:id="@+id/p22"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -227,7 +227,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView62"
+                            android:id="@+id/p23"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -244,7 +244,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView63"
+                            android:id="@+id/p24"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -261,7 +261,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView64"
+                            android:id="@+id/p25"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -280,10 +280,10 @@
                     android:layout_marginHorizontal="2dp">
 
                     <TextView
-                        android:id="@+id/textView110"
+                        android:id="@+id/p222"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="TextView"
+                        android:text="Вторник"
                         android:fontFamily="@font/thin"
                         android:gravity="center"
                         android:textColor="@color/white"
@@ -328,7 +328,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView65"
+                            android:id="@+id/p31"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -345,7 +345,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView66"
+                            android:id="@+id/p32"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -362,7 +362,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView67"
+                            android:id="@+id/p33"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -379,7 +379,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView68"
+                            android:id="@+id/p34"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -396,7 +396,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView69"
+                            android:id="@+id/p35"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -418,7 +418,7 @@
                         android:id="@+id/textView12"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="TextView"
+                        android:text="Среда"
                         android:fontFamily="@font/thin"
                         android:gravity="center"
                         android:textColor="@color/white"
@@ -454,7 +454,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView70"
+                            android:id="@+id/p41"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -471,7 +471,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView71"
+                            android:id="@+id/p42"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -488,7 +488,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView72"
+                            android:id="@+id/p43"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -505,7 +505,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView73"
+                            android:id="@+id/p44"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -522,7 +522,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView74"
+                            android:id="@+id/p45"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -544,7 +544,7 @@
                         android:id="@+id/textView112"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="TextView"
+                        android:text="Четверг"
                         android:fontFamily="@font/thin"
                         android:gravity="center"
                         android:textColor="@color/white"
@@ -589,7 +589,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView75"
+                            android:id="@+id/p51"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -606,7 +606,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView76"
+                            android:id="@+id/p52"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -623,7 +623,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView77"
+                            android:id="@+id/p53"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -640,7 +640,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView78"
+                            android:id="@+id/p54"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -657,7 +657,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView79"
+                            android:id="@+id/p55"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -679,7 +679,7 @@
                         android:id="@+id/textView103"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="TextView"
+                        android:text="Пятница"
                         android:fontFamily="@font/thin"
                         android:gravity="center"
                         android:textColor="@color/white"
@@ -715,7 +715,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView80"
+                            android:id="@+id/p61"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -732,7 +732,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView81"
+                            android:id="@+id/p62"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -749,7 +749,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView82"
+                            android:id="@+id/p63"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -766,7 +766,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView83"
+                            android:id="@+id/p64"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -783,7 +783,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView84"
+                            android:id="@+id/p65"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="TextView"
@@ -805,7 +805,7 @@
                         android:id="@+id/textView113"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="TextView"
+                        android:text="Суббота"
                         android:fontFamily="@font/thin"
                         android:gravity="center"
                         android:textColor="@color/white"

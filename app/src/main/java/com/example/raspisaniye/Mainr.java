@@ -10,7 +10,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 import java.util.Calendar;
 import androidx.activity.EdgeToEdge;
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -82,10 +84,28 @@ public class Mainr extends AppCompatActivity {
 
         pref = getSharedPreferences("data", MODE_PRIVATE);
         firestore = FirebaseFirestore.getInstance();
-        group = pref.getString("group","p1a");
-        year = pref.getString("year","Year1");
-        college = pref.getString("college","test");
+        group = pref.getString("AddedGroup","p1a");
+        year = pref.getString("AddedYear","Year1");
+        college = pref.getString("AddedCollege","test");
+        OnBackPressedCallback callback = new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+//                new AlertDialog.Builder(Mainr.this)
+//                        .setTitle("Выход")
+//                        .setMessage("Вы действительно хотите выйти из приложения?")
+//                        .setPositiveButton("Да", (dialog, which) -> finishAffinity())
+//                        .setNegativeButton("Нет", null)
+//                        .show();
+//
+//                // Завершаем приложение
+                finishAffinity();
+            }
+        };
+
+        // Регистрация обработчика
+        getOnBackPressedDispatcher().addCallback(this, callback);
         testgo();
+
 
 
 
@@ -247,13 +267,13 @@ public class Mainr extends AppCompatActivity {
 
     private void updateUIWithFirestoreData() {
         if ("7".equals(day)) {
-            updateTextViews(todayLessons, "Сегодня нет уроков");
+            updateTextViews(todayLessons, "");
         } else {
             updateLessonsFromFirestore(dd, todayLessons);
         }
 
         if ("6".equals(day)) {
-            updateTextViews(tomorrowLessons, "Завтра нет уроков");
+            updateTextViews(tomorrowLessons, "");
         } else {
                        updateLessonsFromFirestore(gg, tomorrowLessons);
         }
@@ -276,8 +296,8 @@ public class Mainr extends AppCompatActivity {
                         if (lesson != null && !lesson.isEmpty()) {
                             textViews[i].setText(lesson);
                         } else {
-                            textViews[i].setText("-");
-                            showToast("Урок " + (i + 1) + " не найден в документе");
+                            textViews[i].setText("");
+//                            showToast("Урок " + (i + 1) + " не найден в документе");
                         }
                     }
                 } else {
@@ -437,11 +457,29 @@ public class Mainr extends AppCompatActivity {
             timep();
         }
     }
+    private String checkNull(String value) {
+        return (value != null) ? value : "";
+    }
 
     private void timep() {
 
 
         if (day.equals("6")) {
+
+            t11 = checkNull(t11);
+            t12 = checkNull(t12);
+            t13 = checkNull(t13);
+            t14 = checkNull(t14);
+            t15 = checkNull(t15);
+
+// Проверяем переменные от t11f до t15f
+            t11f = checkNull(t11f);
+            t12f = checkNull(t12f);
+            t13f = checkNull(t13f);
+            t14f = checkNull(t14f);
+            t15f = checkNull(t15f);
+
+
             timeRange11 = t11 + "-" + t11f;
             timeRange12 = t12 + "-" + t12f;
             timeRange13 = t13 + "-" + t13f;
@@ -463,6 +501,17 @@ public class Mainr extends AppCompatActivity {
             timeRange14 = "-";
             timeRange15 = "-";
 
+            t21 = checkNull(t21);
+            t22 = checkNull(t22);
+            t23 = checkNull(t23);
+            t24 = checkNull(t24);
+            t25 = checkNull(t25);
+
+            t21f = checkNull(t21f);
+            t22f = checkNull(t22f);
+            t23f = checkNull(t23f);
+            t24f = checkNull(t24f);
+            t25f = checkNull(t25f);
 
             timeRange21 = t21f + "-" + t21;
             timeRange22 = t22f + "-" + t22;

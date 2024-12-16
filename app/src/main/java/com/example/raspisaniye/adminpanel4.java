@@ -30,7 +30,7 @@ public class adminpanel4 extends AppCompatActivity {
     private String year;
     private String group;
 
-    String[] settime = {"1 смена","1 смена, пн сокрашенный","1 смена, пн сокрашенный, 2 кл.час","2 смена","2 смена, 2 кл.час","пусто"};
+    String[] settime = {"1 смена","2 смена","пусто"};
 
     FirebaseFirestore firestore;
     private SharedPreferences pref;
@@ -361,16 +361,7 @@ public class adminpanel4 extends AppCompatActivity {
                     addstandarttime();
                     Toast.makeText(getApplicationContext(), "Время установленно", Toast.LENGTH_SHORT).show();
                 }
-                if(selectedItem.equals("1 смена, пн сокрашенный")) {
-                    addstandartpnplustime();
-                    Toast.makeText(getApplicationContext(), "Время установленно", Toast.LENGTH_SHORT).show();
 
-                }
-                if(selectedItem.equals("1 смена, пн сокрашенный, 2 кл.час")) {
-                    addstandartpnplusandkltime();
-                    Toast.makeText(getApplicationContext(), "Время установленно", Toast.LENGTH_SHORT).show();
-
-                }
                 if(selectedItem.equals("2 смена")) {
                     ddaddstandarttime();
                     Toast.makeText(getApplicationContext(), "Время установленно", Toast.LENGTH_SHORT).show();
@@ -380,15 +371,6 @@ public class adminpanel4 extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Время установленно", Toast.LENGTH_SHORT).show();
 
                 }
-                if(selectedItem.equals("2 смена, 2 кл.час")) {
-                    ddaddstandartkltime();
-                    Toast.makeText(getApplicationContext(), "Время установленно", Toast.LENGTH_SHORT).show();
-
-                }
-
-
-
-
 
 
 
@@ -922,142 +904,49 @@ public class adminpanel4 extends AppCompatActivity {
 
     public void addstandarttime(){
 
-        v11t.setText("8.00");v11t2.setText("8.45");
-        v12t.setText("8.50");v12t2.setText("9.35");
-        v13t.setText("9.50");v13t2.setText("10.35");
-        v14t.setText("10.45");v14t2.setText("11.30");
-        v15t.setText("11.40");v15t2.setText("12.25");
+        v11t.setText("8.00");v11t2.setText("9.20");
+        v12t.setText("9.30");v12t2.setText("10.50");
+        v13t.setText("11.00");v13t2.setText("12.20");
+        v14t.setText("12.50");v14t2.setText("14.10");
+        v15t.setText("14.20");v15t2.setText("15.40");
 
 
-        v21t.setText("8.00");v21t2.setText("8.45");
-        v22t.setText("8.50");v22t2.setText("9.35");
-        v23t.setText("9.50");v23t2.setText("10.35");
-        v24t.setText("10.45");v24t2.setText("11.30");
-        v25t.setText("11.40");v25t2.setText("12.25");
+        v21t.setText("8.00"); v21t2.setText("9.20");
+        v22t.setText("9.30"); v22t2.setText("10.50");
+        v23t.setText("11.00"); v23t2.setText("12.20");
+        v24t.setText("12.50"); v24t2.setText("14.10");
+        v25t.setText("14.20"); v25t2.setText("15.40");
 
+        v31t.setText("8.00"); v31t2.setText("9.20");
+        v32t.setText("9.30"); v32t2.setText("10.50");
+        v33t.setText("11.00"); v33t2.setText("12.20");
+        v34t.setText("12.50"); v34t2.setText("14.10");
+        v35t.setText("14.20"); v35t2.setText("15.40");
 
-        v31t.setText("8.00");v31t2.setText("8.45");
-        v32t.setText("8.50");v32t2.setText("9.35");
-        v33t.setText("9.50");v33t2.setText("10.35");
-        v34t.setText("10.45");v34t2.setText("11.30");
-        v35t.setText("11.40");v35t2.setText("12.25");
+        v41t.setText("8.00"); v41t2.setText("9.20");
+        v42t.setText("9.30"); v42t2.setText("10.50");
+        v43t.setText("11.00"); v43t2.setText("12.20");
+        v44t.setText("12.50"); v44t2.setText("14.10");
+        v45t.setText("14.20"); v45t2.setText("15.40");
 
+        v51t.setText("8.00"); v51t2.setText("9.20");
+        v52t.setText("9.30"); v52t2.setText("10.50");
+        v53t.setText("11.00"); v53t2.setText("12.20");
+        v54t.setText("12.50"); v54t2.setText("14.10");
+        v55t.setText("14.20"); v55t2.setText("15.40");
 
-        v41t.setText("8.00");v41t2.setText("8.45");
-        v42t.setText("8.50");v42t2.setText("9.35");
-        v43t.setText("9.50");v43t2.setText("10.35");
-        v44t.setText("10.45");v44t2.setText("11.30");
-        v45t.setText("11.40");v45t2.setText("12.25");
-
-
-        v51t.setText("8.00");v51t2.setText("8.45");
-        v52t.setText("8.50");v52t2.setText("9.35");
-        v53t.setText("9.50");v53t2.setText("10.35");
-        v54t.setText("10.45");v54t2.setText("11.30");
-        v55t.setText("11.40");v55t2.setText("12.25");
-
-
-        v61t.setText("8.00");v61t2.setText("8.45");
-        v62t.setText("8.50");v62t2.setText("9.35");
-        v63t.setText("9.50");v63t2.setText("10.35");
-        v64t.setText("10.45");v64t2.setText("11.30");
-        v65t.setText("11.40");v65t2.setText("12.25");
+        v61t.setText("8.00"); v61t2.setText("9.20");
+        v62t.setText("9.30"); v62t2.setText("10.50");
+        v63t.setText("11.00"); v63t2.setText("12.20");
+        v64t.setText("12.50"); v64t2.setText("14.10");
+        v65t.setText("14.20"); v65t2.setText("15.40");
 
 
     }
 
-    @SuppressLint("SetTextI18n")
-    public void addstandartpnplustime(){
-
-        v11t.setText("8.00");v11t2.setText("8.40");
-        v12t.setText("8.45");v12t2.setText("9.25");
-        v13t.setText("9.30");v13t2.setText("10.10");
-        v14t.setText("10.20");v14t2.setText("11.00");
-        v15t.setText("11.10");v15t2.setText("11.50");
 
 
-        v21t.setText("8.00");v21t2.setText("8.45");
-        v22t.setText("8.50");v22t2.setText("9.35");
-        v23t.setText("9.50");v23t2.setText("10.35");
-        v24t.setText("10.45");v24t2.setText("11.30");
-        v25t.setText("11.40");v25t2.setText("12.25");
 
-
-        v31t.setText("8.00");v31t2.setText("8.45");
-        v32t.setText("8.50");v32t2.setText("9.35");
-        v33t.setText("9.50");v33t2.setText("10.35");
-        v34t.setText("10.45");v34t2.setText("11.30");
-        v35t.setText("11.40");v35t2.setText("12.25");
-
-
-        v41t.setText("8.00");v41t2.setText("8.45");
-        v42t.setText("8.50");v42t2.setText("9.35");
-        v43t.setText("9.50");v43t2.setText("10.35");
-        v44t.setText("10.45");v44t2.setText("11.30");
-        v45t.setText("11.40");v45t2.setText("12.25");
-
-
-        v51t.setText("8.00");v51t2.setText("8.45");
-        v52t.setText("8.50");v52t2.setText("9.35");
-        v53t.setText("9.50");v53t2.setText("10.35");
-        v54t.setText("10.45");v54t2.setText("11.30");
-        v55t.setText("11.40");v55t2.setText("12.25");
-
-
-        v61t.setText("8.00");v61t2.setText("8.45");
-        v62t.setText("8.50");v62t2.setText("9.35");
-        v63t.setText("9.50");v63t2.setText("10.35");
-        v64t.setText("10.45");v64t2.setText("11.30");
-        v65t.setText("11.40");v65t2.setText("12.25");
-
-
-    }
-
-    @SuppressLint("SetTextI18n")
-    public void addstandartpnplusandkltime(){
-
-        v11t.setText("8.00");v11t2.setText("8.40");
-        v12t.setText("8.45");v12t2.setText("9.25");
-        v13t.setText("9.30");v13t2.setText("10.10");
-        v14t.setText("10.20");v14t2.setText("11.00");
-        v15t.setText("11.10");v15t2.setText("11.50");
-
-
-        v21t.setText("8.00");v21t2.setText("8.20");
-        v22t.setText("8.25");v22t2.setText("9.10");
-        v23t.setText("9.15");v23t2.setText("10.00");
-        v24t.setText("10.10");v24t2.setText("10.55");
-        v25t.setText("11.05");v25t2.setText("11.45");
-
-
-        v31t.setText("8.00");v31t2.setText("8.45");
-        v32t.setText("8.50");v32t2.setText("9.35");
-        v33t.setText("9.50");v33t2.setText("10.35");
-        v34t.setText("10.45");v34t2.setText("11.30");
-        v35t.setText("11.40");v35t2.setText("12.25");
-
-
-        v41t.setText("8.00");v41t2.setText("8.45");
-        v42t.setText("8.50");v42t2.setText("9.35");
-        v43t.setText("9.50");v43t2.setText("10.35");
-        v44t.setText("10.45");v44t2.setText("11.30");
-        v45t.setText("11.40");v45t2.setText("12.25");
-
-
-        v51t.setText("8.00");v51t2.setText("8.45");
-        v52t.setText("8.50");v52t2.setText("9.35");
-        v53t.setText("9.50");v53t2.setText("10.35");
-        v54t.setText("10.45");v54t2.setText("11.30");
-        v55t.setText("11.40");v55t2.setText("12.25");
-
-
-        v61t.setText("8.00");v61t2.setText("8.45");
-        v62t.setText("8.50");v62t2.setText("9.35");
-        v63t.setText("9.50");v63t2.setText("10.35");
-        v64t.setText("10.45");v64t2.setText("11.30");
-        v65t.setText("11.40");v65t2.setText("12.25");
-
-    }
 
 
     @SuppressLint("SetTextI18n")
@@ -1107,52 +996,6 @@ public class adminpanel4 extends AppCompatActivity {
 
     }
 
-    @SuppressLint("SetTextI18n")
-    public void ddaddstandartkltime(){
-
-        v11t.setText("13.30");v11t2.setText("14.15");
-        v12t.setText("14.20");v12t2.setText("15.05");
-        v13t.setText("15.15");v13t2.setText("16.00");
-        v14t.setText("16.10");v14t2.setText("16.55");
-        v15t.setText("17.00");v15t2.setText("17.45");
-
-
-        v21t.setText("13.30");v21t2.setText("13.50");
-        v22t.setText("13.55");v22t2.setText("14.35");
-        v23t.setText("14.40");v23t2.setText("15.20");
-        v24t.setText("15.30");v24t2.setText("16.10");
-        v25t.setText("16.20");v25t2.setText("17.00");
-
-
-        v31t.setText("13.30");v31t2.setText("14.15");
-        v32t.setText("14.20");v32t2.setText("15.05");
-        v33t.setText("15.15");v33t2.setText("16.00");
-        v34t.setText("16.10");v34t2.setText("16.55");
-        v35t.setText("17.00");v35t2.setText("17.45");
-
-
-        v41t.setText("13.30");v41t2.setText("14.15");
-        v42t.setText("14.20");v42t2.setText("15.05");
-        v43t.setText("15.15");v43t2.setText("16.00");
-        v44t.setText("16.10");v44t2.setText("16.55");
-        v45t.setText("17.00");v45t2.setText("17.45");
-
-
-        v51t.setText("13.30");v51t2.setText("14.15");
-        v52t.setText("14.20");v52t2.setText("15.05");
-        v53t.setText("15.15");v53t2.setText("16.00");
-        v54t.setText("16.10");v54t2.setText("16.55");
-        v55t.setText("17.00");v55t2.setText("17.45");
-
-
-        v61t.setText("13.30");v61t2.setText("14.15");
-        v62t.setText("14.20");v62t2.setText("15.05");
-        v63t.setText("15.15");v63t2.setText("16.00");
-        v64t.setText("16.10");v64t2.setText("16.55");
-        v65t.setText("17.00");v65t2.setText("17.45");
-
-
-    }
 
 
     @SuppressLint("SetTextI18n")

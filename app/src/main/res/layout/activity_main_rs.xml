@@ -74,20 +74,26 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:gravity="center_vertical"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="16sp"
+                        android:autoSizeStepGranularity="1sp"
                         android:id="@+id/spred1"
-                        android:layout_width="70dp"
+                        android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
                         android:text="Загрузка"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                         />
 
                     <FrameLayout
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="4dp"
                         android:layout_marginVertical="6dp"
                         android:background="@color/white">
 
@@ -171,8 +177,13 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:gravity="center_vertical"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="16sp"
+                        android:autoSizeStepGranularity="1sp"
                         android:id="@+id/spred2"
-                        android:layout_width="70dp"
+                        android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
@@ -184,7 +195,7 @@
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="4dp"
                         android:layout_marginVertical="6dp"
                         android:background="@color/white">
 
@@ -266,8 +277,13 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:gravity="center_vertical"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="16sp"
+                        android:autoSizeStepGranularity="1sp"
                         android:id="@+id/spred3"
-                        android:layout_width="70dp"
+                        android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
@@ -279,7 +295,7 @@
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="4dp"
                         android:layout_marginVertical="6dp"
                         android:background="@color/white">
 
@@ -360,8 +376,13 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:gravity="center_vertical"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="16sp"
+                        android:autoSizeStepGranularity="1sp"
                         android:id="@+id/spred4"
-                        android:layout_width="70dp"
+                        android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
@@ -373,7 +394,7 @@
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="4dp"
                         android:layout_marginVertical="6dp"
                         android:background="@color/white">
 
@@ -454,8 +475,13 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:gravity="center_vertical"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="16sp"
+                        android:autoSizeStepGranularity="1sp"
                         android:id="@+id/spred5"
-                        android:layout_width="70dp"
+                        android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
@@ -467,7 +493,7 @@
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="4dp"
                         android:layout_marginVertical="6dp"
                         android:background="@color/white">
 
@@ -602,8 +628,13 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:gravity="center_vertical"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="16sp"
+                        android:autoSizeStepGranularity="1sp"
                         android:id="@+id/pred1"
-                        android:layout_width="70dp"
+                        android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
@@ -615,7 +646,7 @@
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="4dp"
                         android:layout_marginVertical="6dp"
                         android:background="@color/white">
 
@@ -696,8 +727,13 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:gravity="center_vertical"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="16sp"
+                        android:autoSizeStepGranularity="1sp"
                         android:id="@+id/pred2"
-                        android:layout_width="70dp"
+                        android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
@@ -709,7 +745,7 @@
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="4dp"
                         android:layout_marginVertical="6dp"
                         android:background="@color/white">
 
@@ -790,8 +826,13 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:gravity="center_vertical"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="16sp"
+                        android:autoSizeStepGranularity="1sp"
                         android:id="@+id/pred3"
-                        android:layout_width="70dp"
+                        android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
@@ -803,7 +844,7 @@
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="4dp"
                         android:layout_marginVertical="6dp"
                         android:background="@color/white">
 
@@ -884,8 +925,13 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:gravity="center_vertical"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="16sp"
+                        android:autoSizeStepGranularity="1sp"
                         android:id="@+id/pred4"
-                        android:layout_width="70dp"
+                        android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
@@ -897,7 +943,7 @@
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="4dp"
                         android:layout_marginVertical="6dp"
                         android:background="@color/white">
 
@@ -978,9 +1024,14 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="16sp"
+                        android:autoSizeStepGranularity="1sp"
                         android:id="@+id/pred5"
-                        android:layout_width="70dp"
+                        android:layout_width="90dp"
                         android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/light"
                         android:text="Загрузка"
@@ -991,7 +1042,7 @@
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="4dp"
                         android:layout_marginVertical="6dp"
                         android:background="@color/white">
 
