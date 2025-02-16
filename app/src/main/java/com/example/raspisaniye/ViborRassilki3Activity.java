@@ -25,9 +25,10 @@ public class ViborRassilki3Activity extends AppCompatActivity {
             return insets;
         });
         pref = getSharedPreferences("data",MODE_PRIVATE);
+        sub();
     }
-
-    public void sub(View view) {
+//    public void sub(View view) {
+    public void sub() {
         String col = pref.getString("scollege","test");
         String yea = pref.getString("syear","test");
         String gro = pref.getString("sgroup","test");

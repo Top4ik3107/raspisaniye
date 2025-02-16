@@ -31,8 +31,7 @@ public class Obuchenie extends AppCompatActivity {
 
     public void GoToProd(View view) {
         Toast.makeText(this, "Эта функция сейчас не доступна", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, adminpanel4.class);
-        startActivity(intent);
+
     }
 
 

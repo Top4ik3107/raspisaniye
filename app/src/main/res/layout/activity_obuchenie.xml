@@ -35,12 +35,12 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Обучение позволит вам быстро разобраться в приложении и обеспечит комфортное и эффективное использование."
+            android:layout_marginBottom="50dp"
+            android:alpha="0.5"
             android:fontFamily="@font/reg"
             android:gravity="center"
-            android:alpha="0.5"
+            android:text="Обучение позволит вам быстро разобраться в приложении и обеспечит комфортное и эффективное использование."
             android:textColor="@color/white"
-            android:layout_marginBottom="50dp"
 
             />
 
