@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Secondr"
+    tools:context=".second_left"
     android:background="@color/grey"
     >
 
@@ -47,7 +47,7 @@
                 android:layout_marginBottom="16dp"
                 android:layout_weight="1"
                 android:background="@drawable/roundblu"
-                android:onClick="chenge2"
+                android:onClick="chenge"
                 >
 
                 <TextView
@@ -55,7 +55,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Правая неделя"
+                    android:text="Левая неделя"
                     android:textColor="@color/black" />
             </FrameLayout>
         </LinearLayout>
@@ -842,48 +842,48 @@
         </LinearLayout>
     </LinearLayout>
     <FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    >
-
-    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp" android:layout_gravity="center_vertical"
+        android:layout_height="match_parent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         >
 
         <FrameLayout
-            android:layout_width="100dp"
-            android:layout_gravity="left"
-            android:layout_height="match_parent"
-            android:onClick="GoToMain">
+            android:layout_width="match_parent"
+            android:layout_height="400dp" android:layout_gravity="center_vertical"
+            >
 
             <FrameLayout
-                android:layout_width="2dp"
-                android:layout_height="match_parent"
+                android:layout_width="100dp"
                 android:layout_gravity="left"
-                android:layout_marginLeft="6dp"
-                android:alpha="0.5"
-                android:background="@color/white">
+                android:layout_height="match_parent"
+                android:onClick="GoToMain">
 
+                <FrameLayout
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="6dp"
+                    android:alpha="0.5"
+                    android:background="@color/white">
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginVertical="150dp"
+                    android:layout_marginLeft="12dp"
+                    android:alpha="0.5"
+                    android:background="@color/white">
+
+                </FrameLayout>
             </FrameLayout>
 
-            <FrameLayout
-                android:layout_width="2dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="left"
-                android:layout_marginVertical="150dp"
-                android:layout_marginLeft="12dp"
-                android:alpha="0.5"
-                android:background="@color/white">
-
-            </FrameLayout>
         </FrameLayout>
-
     </FrameLayout>
-</FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

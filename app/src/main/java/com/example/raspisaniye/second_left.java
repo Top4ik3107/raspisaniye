@@ -20,7 +20,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class Secondr extends AppCompatActivity {
+public class second_left extends AppCompatActivity {
     FirebaseFirestore firestore;
     private SharedPreferences pref;
 
@@ -39,7 +39,7 @@ public class Secondr extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_second_rs);
+        setContentView(R.layout.activity_second_left);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -65,7 +65,7 @@ public class Secondr extends AppCompatActivity {
                 .document(pref.getString("AddedYear", "test"))
                 .collection("group")
                 .document(pref.getString("AddedGroup", "test"))
-                .collection("lessons");
+                .collection("lessons2");
 
 
 
@@ -269,10 +269,8 @@ public class Secondr extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void chenge2(View view) {
-
-        Intent intent = new Intent(this, second_left.class);
+    public void chenge(View view) {
+        Intent intent = new Intent(this, Secondr.class);
         startActivity(intent);
-
     }
 }
