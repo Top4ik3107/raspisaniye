@@ -42,14 +42,17 @@ public class ViborRasspiski2Activity extends AppCompatActivity {
 
     }
     private void update() {
-        String name = pref.getString("college", "умпа лумпа ча ча ча");
-        Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
+        String name = pref.getString("scollege", "умпа лумпа ча ча ча");
+//        Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
         DocumentReference ps = firestore.collection("College").document(name).collection("Year").document(y);
         LinearLayout linearLayout = findViewById(R.id.group_group);
         linearLayout.removeAllViews();
 
         ps.collection("group").get().addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
+                TextView error = findViewById(R.id.textView128);
+                char fifthLetter = y.charAt(4);
+                error.setText("Группы "+fifthLetter+" курса");
                 QuerySnapshot querySnapshot = task.getResult();
                 if (querySnapshot != null) {
                     for (QueryDocumentSnapshot document : querySnapshot) {
@@ -61,7 +64,7 @@ public class ViborRasspiski2Activity extends AppCompatActivity {
                         itemView.setOnClickListener(v -> {
                             text = document.getId(); // Запоминаем выбранный элемент
                             addhadle();
-                            Toast.makeText(this, "Selected: " + text, Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(this, "Selected: " + text, Toast.LENGTH_SHORT).show();
                         });
 
                         linearLayout.addView(itemView);
@@ -76,7 +79,7 @@ public class ViborRasspiski2Activity extends AppCompatActivity {
     }
     public void addhadle() {
         if (text == null || text.isEmpty()) {
-            Toast.makeText(this, "Please select a group first!", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "Please select a group first!", Toast.LENGTH_SHORT).show();
             return;
         }
 

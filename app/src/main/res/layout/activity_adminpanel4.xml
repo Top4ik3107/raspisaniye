@@ -19,7 +19,51 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20px"
+                android:orientation="horizontal">
 
+                <FrameLayout
+                    android:id="@+id/swi1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundblubord"
+                    android:onClick="left">
+
+                    <TextView
+                        android:id="@+id/textView361"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Левая неделя"
+                        android:textColor="@color/bluegreen" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/swi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundblu"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView362"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Правая неделя"
+                        android:textColor="@color/black" />
+                </FrameLayout>
+
+            </LinearLayout>
             <TextView
                 android:id="@+id/textView4"
                 android:layout_gravity="center_horizontal"

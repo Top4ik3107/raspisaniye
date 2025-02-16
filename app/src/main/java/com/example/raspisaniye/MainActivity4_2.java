@@ -28,7 +28,7 @@ import java.util.Calendar;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
-public class adminpanel4 extends AppCompatActivity {
+public class MainActivity4_2 extends AppCompatActivity {
 
 
 
@@ -348,7 +348,7 @@ public class adminpanel4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adminpanel4);
+        setContentView(R.layout.activity_main42);
 
 
 
@@ -361,7 +361,7 @@ public class adminpanel4 extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, settime);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinnersity);
+        Spinner spinner = (Spinner) findViewById(R.id.spinnersity2);
         spinner.setAdapter(adapter);
 
         // заголовок
@@ -405,7 +405,7 @@ public class adminpanel4 extends AppCompatActivity {
         dispatcher.addCallback(this, new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
-                Intent intent = new Intent(adminpanel4.this, adminpanelRazdelenie.class);
+                Intent intent = new Intent(MainActivity4_2.this, adminpanelRazdelenie.class);
                 startActivity(intent);
                 // finish();
             }
@@ -414,7 +414,7 @@ public class adminpanel4 extends AppCompatActivity {
 
     }
     private void updatels(){
-        CollectionReference cities = firestore.collection("College").document(college).collection("Year").document(year).collection("group").document(group).collection("lessons");
+        CollectionReference cities = firestore.collection("College").document(college).collection("Year").document(year).collection("group").document(group).collection("lessons2");
 
 
         cities.document(pon).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
@@ -508,7 +508,7 @@ public class adminpanel4 extends AppCompatActivity {
 
 
 
-        CollectionReference cities = firestore.collection("College").document(college).collection("Year").document(year).collection("group").document(group).collection("lessons");
+        CollectionReference cities = firestore.collection("College").document(college).collection("Year").document(year).collection("group").document(group).collection("lessons2");
 
         String uruk11 = v11.getText().toString();
         String urok12 = v12.getText().toString();
@@ -1066,8 +1066,8 @@ public class adminpanel4 extends AppCompatActivity {
 
     }
 
-    public void left(View view) {
-        Intent intent = new Intent(this, MainActivity4_2.class);
+    public void right(View view) {
+        Intent intent = new Intent(this, adminpanel4.class);
         startActivity(intent);
     }
 }

@@ -57,11 +57,11 @@
                         android:id="@+id/textView85"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView"
-                        android:gravity="center"
                         android:layout_gravity="center"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/thin"/>
+                        android:fontFamily="@font/thin"
+                        android:gravity="center"
+                        android:text="1 курс"
+                        android:textColor="@color/white" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -77,12 +77,11 @@
                         android:id="@+id/textView86"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView"
-                        android:gravity="center"
                         android:layout_gravity="center"
-                        android:textColor="@color/white"
                         android:fontFamily="@font/thin"
-                        />
+                        android:gravity="center"
+                        android:text="2 курс"
+                        android:textColor="@color/white" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -98,11 +97,11 @@
                         android:id="@+id/textView87"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView"
-                        android:gravity="center"
                         android:layout_gravity="center"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/thin" />
+                        android:fontFamily="@font/thin"
+                        android:gravity="center"
+                        android:text="3 курс"
+                        android:textColor="@color/white" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -117,12 +116,11 @@
                         android:id="@+id/textView88"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView"
-                        android:gravity="center"
                         android:layout_gravity="center"
-                        android:textColor="@color/white"
                         android:fontFamily="@font/thin"
-                        />
+                        android:gravity="center"
+                        android:text="4 курс"
+                        android:textColor="@color/white" />
                 </FrameLayout>
             </LinearLayout>
 
@@ -171,8 +169,8 @@
                             android:id="@+id/textView127"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Сдесь нету групп"
-                            android:gravity="center"/>
+                            android:gravity="center"
+                            android:text="Здесь нету групп" />
                     </LinearLayout>
                 </ScrollView>
             </LinearLayout>

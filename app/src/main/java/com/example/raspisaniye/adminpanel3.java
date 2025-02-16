@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -61,7 +62,24 @@ public class adminpanel3 extends AppCompatActivity {
         update();
         pref = getSharedPreferences("data", MODE_PRIVATE);
         fy1 = findViewById(R.id.f1);
+        OnBackPressedCallback callback = new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+//                new AlertDialog.Builder(Mainr.this)
+//                        .setTitle("Выход")
+//                        .setMessage("Вы действительно хотите выйти из приложения?")
+//                        .setPositiveButton("Да", (dialog, which) -> finishAffinity())
+//                        .setNegativeButton("Нет", null)
+//                        .show();
+//
+//                // Завершаем приложение
+                Intent intent = new Intent(adminpanel3.this, Mainr.class);
+                startActivity(intent);
+            }
+        };
 
+        // Регистрация обработчика
+        getOnBackPressedDispatcher().addCallback(this, callback);
 
 
     }
@@ -103,7 +121,7 @@ public class adminpanel3 extends AppCompatActivity {
         frameLayout.removeAllViews();
     }
     public void Add(View view) {
-        Toast.makeText(this,"dfd",Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this,"dfd",Toast.LENGTH_SHORT).show();
         pref = getSharedPreferences("data", MODE_PRIVATE);
         fy1 = findViewById(R.id.f1);
         EditText editText = findViewById(R.id.editTextText9);
@@ -118,7 +136,7 @@ public class adminpanel3 extends AppCompatActivity {
     }
     private void update() {
         String name = pref.getString("college", "умпа лумпа ча ча ча");
-        Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
         DocumentReference ps = firestore.collection("College").document(name).collection("Year").document(y);
         LinearLayout linearLayout = findViewById(R.id.group_group);
         linearLayout.removeAllViews();

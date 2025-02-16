@@ -23,6 +23,7 @@
             android:layout_height="30dp"
             android:orientation="vertical"
             android:layout_gravity="right"
+            android:onClick="GoToRazdelenie"
             android:background="@drawable/roundwhite2"
             android:alpha="0.5"
             >
@@ -31,10 +32,10 @@
                 android:id="@+id/textView91"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Создать колледж"
-                android:textSize="17dp"
-                android:gravity="center"
                 android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="Назад"
+                android:textSize="17dp"
 
                 />
         </LinearLayout>

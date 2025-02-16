@@ -161,6 +161,12 @@ public class Mainr extends AppCompatActivity {
 
         }
     }
+    public void CloseMenu(View view){
+
+        FrameLayout frameLayout = findViewById(R.id.pan);
+        frameLayout.removeAllViews();
+
+    }
 
 
 
@@ -204,6 +210,16 @@ public class Mainr extends AppCompatActivity {
         initTime();
 
     }
+    public static String getCurrentWeekType() {
+        // Получаем текущую дату
+        Calendar calendar = Calendar.getInstance();
+
+        // Получаем номер недели в году (от 1 до 52)
+        int weekNumber = calendar.get(Calendar.WEEK_OF_YEAR);
+
+        // Определяем, четная неделя или нечетная
+        return (weekNumber % 2 == 0) ? "lessons2" : "lessons";
+    }
     private void dayfind() {
         int dayOfWeek = Calendar.getInstance().get(Calendar.DAY_OF_WEEK);
         switch (dayOfWeek) {
@@ -231,7 +247,7 @@ public class Mainr extends AppCompatActivity {
         }
     }
     private void initializeFirestoreReferences() {
-        CollectionReference clacc = firestore.collection("College").document(college).collection("Year").document(year).collection("group").document(group).collection("lessons");
+        CollectionReference clacc = firestore.collection("College").document(college).collection("Year").document(year).collection("group").document(group).collection(getCurrentWeekType());
 
         switch (day) {
             case "1":
@@ -281,7 +297,7 @@ public class Mainr extends AppCompatActivity {
 
     private void updateLessonsFromFirestore(DocumentReference docRef, TextView[] textViews) {
         if (textViews == null || textViews.length == 0) {
-            showToast("Ошибка: массив textViews не инициализирован или пуст");
+           // showToast("Ошибка: массив textViews не инициализирован или пуст");
             return;
         }
 
@@ -301,11 +317,11 @@ public class Mainr extends AppCompatActivity {
                         }
                     }
                 } else {
-                    showToast("Документ отсутствует или не существует: " + (document != null ? document.getId() : "null"));
+                    //showToast("Документ отсутствует или не существует: " + (document != null ? document.getId() : "null"));
                 }
             } else {
                 Exception exception = task.getException();
-                showToast("Ошибка выполнения запроса: " + (exception != null ? exception.getMessage() : "неизвестная ошибка"));
+               // showToast("Ошибка выполнения запроса: " + (exception != null ? exception.getMessage() : "неизвестная ошибка"));
             }
             pendingTasks--;
             checkPendingTasks();
@@ -324,7 +340,7 @@ public class Mainr extends AppCompatActivity {
 //    }
 
     private void initTime() {
-        CollectionReference clacc = firestore.collection("College").document(college).collection("Year").document(year).collection("group").document(group).collection("lessons");
+        CollectionReference clacc = firestore.collection("College").document(college).collection("Year").document(year).collection("group").document(group).collection(getCurrentWeekType());
 
 
         switch (day) {
@@ -392,7 +408,7 @@ public class Mainr extends AppCompatActivity {
 
             }
         } else {
-            showToast("Ошибка при выполнении запроса");
+           // showToast("Ошибка при выполнении запроса");
         }
         pendingTasks--;
         checkPendingTasks();
@@ -410,7 +426,7 @@ public class Mainr extends AppCompatActivity {
 
             }
         } else {
-            showToast("Ошибка при выполнении запроса");
+           // showToast("Ошибка при выполнении запроса");
         }
         pendingTasks--;
         checkPendingTasks();
@@ -428,7 +444,7 @@ public class Mainr extends AppCompatActivity {
 
             }
         } else {
-            showToast("Ошибка при выполнении запроса");
+           // showToast("Ошибка при выполнении запроса");
         }
         pendingTasks--;
         checkPendingTasks();
@@ -446,7 +462,7 @@ public class Mainr extends AppCompatActivity {
 
             }
         } else {
-            showToast("Ошибка при выполнении запроса");
+           // showToast("Ошибка при выполнении запроса");
         }
         pendingTasks--;
         checkPendingTasks();
@@ -553,7 +569,7 @@ public class Mainr extends AppCompatActivity {
     }
 
     private void showToast(String message) {
-        Toast.makeText(Mainr.this, message, Toast.LENGTH_SHORT).show();
+      //  Toast.makeText(Mainr.this, message, Toast.LENGTH_SHORT).show();
     }
 
 

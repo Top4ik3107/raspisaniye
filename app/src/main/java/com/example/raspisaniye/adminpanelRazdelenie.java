@@ -8,6 +8,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.OnBackPressedCallback;
+import androidx.activity.OnBackPressedDispatcher;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -47,9 +49,18 @@ public class adminpanelRazdelenie extends AppCompatActivity {
 
             Toast.makeText(this, "Ошибка", Toast.LENGTH_SHORT).show();
         }
-
+        OnBackPressedDispatcher dispatcher = getOnBackPressedDispatcher();
+        dispatcher.addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                Intent intent = new Intent(adminpanelRazdelenie.this, Mainr.class);
+                startActivity(intent);
+                // finish();
+            }
+        });
 
     }
+
 
     public void GoToAdd(View view) {
         if (subot7.getText().toString().equals("Set college")) {

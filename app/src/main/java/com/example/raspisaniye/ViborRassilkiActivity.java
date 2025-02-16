@@ -34,7 +34,7 @@ public class ViborRassilkiActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate: Activity started");
-        Toast.makeText(this, "Activity started", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "Activity started", Toast.LENGTH_SHORT).show();
 
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_vibor_rassilki);
@@ -54,7 +54,7 @@ public class ViborRassilkiActivity extends AppCompatActivity {
 
     private void update() {
         String name = pref.getString("college", "умпа лумпа ча ча ча");
-        Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
         DocumentReference ps = firestore.collection("data").document("coll");
         LinearLayout linearLayout = findViewById(R.id.rassilBox);
         linearLayout.removeAllViews();
@@ -72,7 +72,7 @@ public class ViborRassilkiActivity extends AppCompatActivity {
                         itemView.setOnClickListener(v -> {
                             text = document.getId(); // Запоминаем выбранный элемент
                             addhadle();
-                            Toast.makeText(this, "Selected: " + text, Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(this, "Selected: " + text, Toast.LENGTH_SHORT).show();
                         });
 
                         linearLayout.addView(itemView);
@@ -96,7 +96,7 @@ public class ViborRassilkiActivity extends AppCompatActivity {
 
         Log.d(TAG, "addhadle: Saving selected college: " + text);
         pref.edit().putString("scollege", text).apply();
-        Toast.makeText(this,"нач",Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this,"нач",Toast.LENGTH_SHORT).show();
 
         FrameLayout frameLayout = findViewById(R.id.panini);
         LayoutInflater inflater = LayoutInflater.from(this);
@@ -108,6 +108,13 @@ public class ViborRassilkiActivity extends AppCompatActivity {
         Log.d(TAG, "addhadle: Starting admin panel");
 //        startActivity(intent);
     }
+    public void exit(View view){
+        FrameLayout frameLayout = findViewById(R.id.panini);
+        frameLayout.removeAllViews();
+
+
+    }
+
 
     public void Getras(View view) {
         Log.d(TAG, "Getras: Refresh button clicked");
